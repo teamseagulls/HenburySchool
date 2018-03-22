@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="CSS/form.css">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header class="header" id="header-hr">
+      <h1 id="headline1r">Henbury School</h1>
+      <div class="header-container">
+        <nav class=nav-c>
+          <div class="nav-container">
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About</a>
+          </div>
+        </nav>
+      </div>
+    </header> <br><br>
+
+    <form class="registration" action="self" method="post">
+      <h2 id="registrationform">Registration Form</h2><br>
+      <fieldset>
+        <div class="regOption">
+          <label for="regOption">Please select a catagory</label>
+          <select name="catagoty" id="regOption">
+            <option value="guardian">Guardian</option>
+            <option value="stuff">Stuff</option>
+          </select>
+        </div><br><br>
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" name="fname" id="name">
+        </div>
+        <div class="address" id="address">
+             <label for="street">Street Name</label>
+             <input type="text" name="street" id="street" > <br>
+             <label for="suburb">Suburb</label>
+             <input type="text" name="suburb" id="suburb" ><br>
+             <label for="state">State</label>
+             <input type="text" name="state" id="state" > <br>
+             <label for="zip">Zip Code</label>
+             <input type="text" name="zip" id="zip" > <br>
+        </div>
+        <div class="email">
+             <label for="email">Email Address</label>
+             <input type="text" name="email" id="email">  <br>
+        </div>
+        <div class="phone">
+             <label for="phone">Phone Number</label>
+             <input type="tel" name="phone" id="phone"> <br>
+        </div>
+        <div class="birthday">
+             <label for="birthday">Date of Birth</label>
+             <input type="date" name="birthday" id="birthday">
+        </div><br>
+        <div class="others">
+             <label>Please dot'n forget to say somehing that we should care about.</label><br>
+             <textarea name="others" rows="5" cols="25"></textarea>
+        </div>
+      </fieldset>
+        <button type="submit" name="submit">Submit Form</button>
+        <br><br><br><br><br>
+    </form>
+  </body>
+</html>

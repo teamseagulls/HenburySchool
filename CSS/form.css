@@ -1,0 +1,100 @@
+button,input,select,textarea:{
+box-sizing: border-box;
+}
+
+input,select,textarea:{
+  font-family: inherit;
+  font-size: 100%;
+}
+#regRyH1{
+  text-align: center;
+}
+#regRyhBc{
+  background: #d11d1d;
+  color: White;
+}
+.homeContent{
+  text-align: center;
+}
+.section{
+  text-align: left;
+}
+.asideSL, .asideSR{
+  text-align: left;
+}
+.leftS{
+  display: inline-block;
+  float: left;
+  margin: 2em;
+}
+.middleS{
+  display: inline-block;
+  float: center;
+  margin: 2em;
+}
+.rightS{
+  display: inline-block;
+  float: right;
+    margin: 2em;
+}
+#registrationform{
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin: auto;
+}
+
+input[type="text"],input[type="email"]{
+  margin: .5em;
+  width:90%;
+}
+
+input:focus{
+  background-color: #F2F3D9;
+}
+
+input:active{
+  background-color: #BCF8EC;
+}
+
+.header{
+  background: #6699c4;
+  padding: .2em;
+  margin: .2em;
+  text-align: center;
+}
+
+#headline1{
+  text-align: center;
+}
+
+.nav-container{
+  text-align: right;
+  display: inline;
+}
+
+body{
+  background: #FDF0D5;
+}
+#zip{max-width: 10em}
+
+fieldset{
+  border-width: 0;
+  padding: 0;
+
+}
+
+@media (min-width:30em) {
+  label{
+    display:block;
+  }
+  input[type="text"],input[type="tel"],input[type="email"]{
+    margin: .2em auto .8em auto;
+    width:400px;
+  }
+  fieldset{
+      margin-left: 3em;
+  }
+}
