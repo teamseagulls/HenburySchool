@@ -1,5 +1,6 @@
 *|* { margin:0pt; padding:0pt; }
 body{
+
   color:#DC7633;
   background: #FDEBD0 ;
   padding: 0;
@@ -18,7 +19,7 @@ ul li {
   float:left;
   width: 140px;
   height: 40px;
-  background-color: #808B96;
+  background-color: #003488;
   opacity: 2;
   line-height: 40px;
   font-size: 15px;
@@ -30,8 +31,8 @@ ul li a {
 }
 ul li a:hover{
   cursor: pointer;
-  background-color: #F5B041;
-  color: #34495E;
+  background-color: #D5160C;
+  color: #FDE00A;
 }
 ul li ul li{
   display:block;
