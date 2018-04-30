@@ -1,69 +1,75 @@
-*|* { margin:0pt; padding:0pt; }
-body{
+*|* {
+  margin:0;
+  padding:0;
+}
 
-  color:#DC7633;
-  background: #FDEBD0 ;
-  padding: 0;
-}
-.header-container{
-  width: 100%;
-  text-align: center;
-}
-nav{
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-}
 ul{
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  display: inline-block;
-}
-ul li {
-  float:left;
-  width: 150px;
-  height: 40px;
-  background-color: #3F51B5;
-  opacity: 2;
-  line-height: 40px;
-  font-size: 15px;
-}
-ul li:hover{
-  background-color: #1123D6;
+  list-style-type: none;
 }
 
-
-
-ul ul li:hover{
-  background-color: #26a69a;
+body{
+  background-color: white;
+  font-family: 'Lato', sans-serif;
 }
 
+.navigation{
+  color:white;
+  background-color: #25283D;
+  border-radius: 4px;
+  max-width: 320px;
+  width:90%;
+  margin:20px auto 0;
+}
 
+.level_one_menu{
+  display: flex;
+  flex-direction: column;
+}
 
-ul li a {
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
+.level_one_menu a{
   display: block;
-  color: white;
-}
-ul li a:hover{
-  display: inline-block;
-  background: white;
-  cursor: pointer;
-  background-color: #D5160C;
-  color: #FDE00A;
-}
-ul li ul li{
-  display:none;
+  text-decoration: none;
+  color:white;
+  padding-left: 10px;
+  line-height: 36px;
 }
 
-ul li:hover ul li{
-  display:block;
-  background: #FF543F;
+.level_one_menu>li>a{
+  background-color: #d6a32c;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
 }
-.main-Container{
-  width: 100%;
-  height: 1000px;
+
+.level_two_menu>li{
+  padding-left: 24px;
+}
+
+.level_one_menu>li>a:active{
+  background-color: #ed782a;
+}
+
+.level_two_menu>li:active{
+  background-color: #1934a0;
+}
+
+.level_two_menu{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+@media only screen and (min-width:400px){
+
+  .level_one_menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .level_two_menu{
+    display: none;
+  }
+
 }
