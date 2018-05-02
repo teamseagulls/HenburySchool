@@ -1,4 +1,4 @@
-*|* {
+* {
   margin:0;
   padding:0;
 }
@@ -13,10 +13,9 @@ body{
 }
 
 .navigation{
-  color:white;
-  background-color: #25283D;
+  background-color:#385077 ;
   border-radius: 4px;
-  max-width: 320px;
+  max-width: 500px;
   width:90%;
   margin:20px auto 0;
 }
@@ -34,42 +33,56 @@ body{
   line-height: 36px;
 }
 
+/*set style for the level one menu*/
 .level_one_menu>li>a{
-  background-color: #d6a32c;
   text-transform: uppercase;
   border-bottom: 1px solid black;
-}
-
-.level_two_menu>li{
-  padding-left: 24px;
+  font-weight:400;
 }
 
 .level_one_menu>li>a:active{
   background-color: #ed782a;
 }
 
+/*set padding for level two menu*/
+.level_two_menu>li{
+  padding-left: 24px;
+}
+
 .level_two_menu>li:active{
   background-color: #1934a0;
 }
 
+/*hide the level two menu in default*/
 .level_two_menu{
   display: none;
 }
 
+/*show the menu when click on it*/
 .show{
   display: block;
 }
 
-@media only screen and (min-width:400px){
 
+@media only screen and (min-width:900px){
+  .navigation{
+    max-width: 1000px;
+  }
+
+/*change the flex direction*/
   .level_one_menu{
-    display:flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .level_two_menu{
-    display: none;
+/*clear the menu padding*/
+  .level_one_menu a{
+    padding:0;
+  }
+
+/*clear the level two menu padding*/
+  .level_two_menu>li{
+    padding:0;
   }
 
 }
