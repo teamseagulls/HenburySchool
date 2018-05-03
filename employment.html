@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="css/school.css">
+      <link rel="stylesheet" href="css/stylescard.css">
     <title>Henbury School website </title>
   </head>
 
@@ -12,11 +13,10 @@
         <div class="header">
           <header>
             <div class="nav-container">
-              <nav>
-                <ul>
-                  <li> <a href="index.html">Home</a> </li>
-                  <li> <a href="about.html">About</a>
-                    <ul>
+              <nav class="navigation">
+                <ul class="level_one_menu">
+                  <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
+                    <ul class="level_two_menu about">
                       <li>  <a href="outreachclass.html">Outreach Class</a> </li>
                       <li>  <a href="annualreport.html">Anual Report</a> </li>
                       <li>  <a href="council.html">Council</a> </li>
@@ -24,29 +24,29 @@
                     </ul>
                   </li>
                   <li> <a href="enrol.html">Enrol</a></li>
-                  <li> <a href="newsevents.html">News & Events</a>
-                    <ul>
+                  <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
+                    <ul class="level_two_menu news_events">
                       <li> <a href="news.html">News </a> </li>
                       <li> <a href="events.html">Events </a> </li>
                       <li> <a href="calendar.html">Calendar </a> </li>
                     </ul>
                   </li>
-                  <li> <a href="fundraising.html">Fundraising</a>
-                    <ul>
+                  <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
+                    <ul class="level_two_menu fundraising">
                       <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
                       <li> <a href="otherhelp.html">Other Help </a> </li>
                     </ul>
                   </li>
-                  <li> <a href="parentsportal.html">Parents Portal</a>
-                    <ul>
+                  <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
+                    <ul class="level_two_menu parents_portal">
                       <li> <a href="teachingteam.html">Teaching Team </a> </li>
                       <li> <a href="afterschoolcare.html">After School Care</a> </li>
                       <li> <a href="ptcommunication.html">Communication </a> </li>
                     </ul>
                   </li>
-                  <li> <a href="programs.html">Programs</a></li>
-                  <li> <a href="contact.html">Contact</a>
-                    <ul>
+                  <li> <a href="#">Programs</a></li>
+                  <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
+                    <ul class="level_two_menu contact">
                       <li> <a href="absence.html">Absence </a> </li>
                       <li> <a href="enquery.html">Enquary </a> </li>
                       <li> <a href="faq.html">FAQ </a> </li>
@@ -55,10 +55,69 @@
                 </ul>
               </nav>
             </div>
+            <h1>EMPLOYMENT OPPORTUNITIES</h1>
           </header>
         </div>
-        <div class="">
           <main>
+
+              <section class="containerpara">
+                <div>
+                    <p>Henbury School is an innovative educational community with high academic standards and a strong pastoral and co-curricular program.<br><br>
+                        We are dedicated to educating girls for the 21st Century and developing confident, independent studetns. </p>
+                        <section class="containerpara">
+                            <h2>POSITIONS VACANT</h2>
+                              <div>
+                                      <p>Positions currently available <br> <br></p>
+                                      <h2>Click to apply</h2><br><br>
+                                        <fieldset>
+                                                <div class="mycards">
+                                                  <a href="jobform.html" >
+                                                    <div class="card card-1">
+                                                        <div class="cardtitle">  <h2>CASUAL TEACHERS</h2>  </div>
+                                                          <div class="cardmedia">  <img src="images/teacher1.jpg" id="teacher"alt=""> </a> </div>
+                                                              <div class="cardtext">
+                                                                <p>  Contract Type: Casual<br>
+                                                                  Commencing:
+                                                                  <br>
+                                                                  Closing Date: Ongoing
+                                                                  <br>
+                                                               </p>
+                                                               <p>The School is seeking applications from dynamic, motivated and enthusiastic educators who would enjoy working in a team which aims to make a difference.No media download found.</p>
+                                                            </div>
+                                                          <div class="cardaction">  <div>  <a href="tel: (08) 89977077">Phone (08) 89977077</a> </div>
+                                                              <div>  <a href=mailto:henbury.admin@ntschools.net>Email: henbury.admin@ntschools.net</a></div>
+                                                          </div>
+                                                    </div>
+                                                  </a>
+                                                  <a href="jobform.html" >
+                                                    <div class="card card-2">
+                                                      <div class="cardtitle"><h2>MUSIC TEACHER</h2>  </div>
+                                                        <div class="cardmedia">  <img src="images/musicteacher.jpg" id="teacher"alt=""> </a> </div>
+                                                      <div class="cardtext">
+                                                        <p>  Contract Type: Maternity leave position - temporary part time 0.8
+                                                                <br>
+                                                                Commencing: 4 June 2018 and concluding 19 July 2019
+                                                                <br>
+                                                                 Closing Date: Tuesday 8 May 2018 at 4pm
+                                                                <br>
+                                                       </p>
+                                                       <p>The School is seeking applications from dynamic, motivated and enthusiastic educators who would enjoy working in a team which aims to make a difference.No media download found.</p>  </div>
+                                                        <div class="cardaction">
+                                                           <div>  <a href="tel: (08) 89977077">Phone (08) 89977077</a> </div>
+                                                            <div><a href=mailto:henbury.admin@ntschools.net>Email: henbury.admin@ntschools.net</a>  </div>
+                                                          </div>
+                                                  </div>
+                                            </a>
+                                              </div>
+                                      </fieldset>
+
+                              </div>
+
+                        </section>
+              </div>
+
+
+
 
           </main>
           <footer>
@@ -66,5 +125,6 @@
           </footer>
         </div>
     </div>
+      <script src="js/school.js"></script>
     </body>
 </html>

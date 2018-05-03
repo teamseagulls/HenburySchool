@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/school.css">
+      <link rel="stylesheet" href="css/stylescard.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul class="level_one_menu">
+            <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
+              <ul class="level_two_menu about">
+                <li>  <a href="outreachclass.html">Outreach Class</a> </li>
+                <li>  <a href="annualreport.html">Anual Report</a> </li>
+                <li>  <a href="council.html">Council</a> </li>
+                <li>  <a href="employment.html">Employment</a> </li>
+              </ul>
+            </li>
+            <li> <a href="enrol.html">Enrol</a></li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
+              <ul class="level_two_menu news_events">
+                <li> <a href="news.html">News </a> </li>
+                <li> <a href="events.html">Events </a> </li>
+                <li> <a href="calendar.html">Calendar </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
+              <ul class="level_two_menu fundraising">
+                <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+                <li> <a href="otherhelp.html">Other Help </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
+              <ul class="level_two_menu parents_portal">
+                <li> <a href="teachingteam.html">Teaching Team </a> </li>
+                <li> <a href="afterschoolcare.html">After School Care</a> </li>
+                <li> <a href="ptcommunication.html">Communication </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#">Programs</a></li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
+              <ul class="level_two_menu contact">
+                <li> <a href="absence.html">Absence </a> </li>
+                <li> <a href="enquery.html">Enquary </a> </li>
+                <li> <a href="faq.html">FAQ </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1>Welcome to Henbury School</h1>
+    </header>
+
+    <main>
+
+      <fieldset>
+        <h2>Employment Application</h2>
+<!--
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
+if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
+if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
+if (frm.Position.value == "") {alert('Position is required.');frm.Position.focus();return false;}
+if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+-->
+
+<form>
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="your@email.com" />
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="PNUFKH24C2ZN" />
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+<input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+<input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+<table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td style="width:50%">
+<b>First name *</b><br />
+<input name="First_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>Last name *</b><br />
+<input name="Last_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Email *</b><br />
+<input name="Email_Address" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td colspan="2">
+<b>Position you are applying for *</b><br />
+<input name="Position" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+
+<b>When can you start?</b><br />
+<input name="StartDate" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+<b>Phone *</b><br />
+<input name="Phone" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>Fax</b><br />
+<input name="Fax" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Are you willing to relocate?</b><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
+<input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Last company you worked for</b><br />
+<input name="Organization" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Reference / Comments / Questions</b><br />
+<textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;">
+<table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+<tr><td colspan="2" style="padding-bottom:18px;">
+
+</table>
+<br /><br />
+<label for="submit"><input type="submit" id="submit" name="submit"></label><br>
+</div>
+</form>
+      </fieldset>
+    </main>
+      <script src="js/school.js"></script>
+  </body>
+
+</html>
