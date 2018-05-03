@@ -4,67 +4,144 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="css/school.css">
+    <link rel="stylesheet" href="css/requestform.css">
     <title>Henbury School website </title>
   </head>
 
   <body>
-    <div class="body">
-        <div class="header">
-          <header>
-            <div class="nav-container">
-              <nav>
-                <ul>
-                  <li> <a href="index.html">Home</a> </li>
-                  <li> <a href="about.html">About</a>
-                    <ul>
-                      <li>  <a href="outreachclass.html">Outreach Class</a> </li>
-                      <li>  <a href="annualreport.html">Anual Report</a> </li>
-                      <li>  <a href="council.html">Council</a> </li>
-                      <li>  <a href="employment.html">Employment</a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="enrol.html">Enrol</a></li>
-                  <li> <a href="newsevents.html">News & Events</a>
-                    <ul>
-                      <li> <a href="news.html">News </a> </li>
-                      <li> <a href="events.html">Events </a> </li>
-                      <li> <a href="calendar.html">Calendar </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="fundraising.html">Fundraising</a>
-                    <ul>
-                      <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
-                      <li> <a href="otherhelp.html">Other Help </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="parentsportal.html">Parents Portal</a>
-                    <ul>
-                      <li> <a href="teachingteam.html">Teaching Team </a> </li>
-                      <li> <a href="afterschoolcare.html">After School Care</a> </li>
-                      <li> <a href="ptcommunication.html">Communication </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="programs.html">Programs</a></li>
-                  <li> <a href="contact.html">Contact</a>
-                    <ul>
-                      <li> <a href="absence.html">Absence </a> </li>
-                      <li> <a href="enquery.html">Enquary </a> </li>
-                      <li> <a href="faq.html">FAQ </a> </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-        </div>
-        <div class="">
-          <main>
 
-          </main>
-          <footer>
+    <header>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul class="level_one_menu">
+            <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
+              <ul class="level_two_menu about">
+                <li>  <a href="outreachclass.html">Outreach Class</a> </li>
+                <li>  <a href="annualreport.html">Anual Report</a> </li>
+                <li>  <a href="council.html">Council</a> </li>
+                <li>  <a href="employment.html">Employment</a> </li>
+              </ul>
+            </li>
+            <li> <a href="enrol.html">Enrol</a></li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
+              <ul class="level_two_menu news_events">
+                <li> <a href="news.html">News </a> </li>
+                <li> <a href="events.html">Events </a> </li>
+                <li> <a href="calendar.html">Calendar </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
+              <ul class="level_two_menu fundraising">
+                <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+                <li> <a href="otherhelp.html">Other Help </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
+              <ul class="level_two_menu parents_portal">
+                <li> <a href="teachingteam.html">Teaching Team </a> </li>
+                <li> <a href="afterschoolcare.html">After School Care</a> </li>
+                <li> <a href="ptcommunication.html">Communication </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#">Programs</a></li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
+              <ul class="level_two_menu contact">
+                <li> <a href="absence.html">Absence </a> </li>
+                <li> <a href="enquery.html">Enquary </a> </li>
+                <li> <a href="faq.html">FAQ </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          </footer>
-        </div>
+    <div class="mainbody">
+      <main>
+        <section class="requestform">
+          <h2> Request a Meeting with Teacher</h2>
+            <p>  We put our clients first. In the seciton you can a request for meeting with any of our teacher regarding an issue.
+               Please Select Student ID nad Grade to find available teacher for book a meeting.</p>
+               <form class="booking" action="self" method="post">
+                 <fieldset>
+                   <h3 id="bookingform"> Please fill the form to apply a Meeting</h3><br>
+                   <div class="options">
+                     <label for="catagoty">Please select a catagory. <br> I'm a:</label>
+                       <select name="catagoty" id="regOption" required>
+                         <option value="guardian">Guardian</option>
+                         <option value="stuff">Stuff</option>
+                         <option value="student">Student</option>
+                       </select>
+                   </div><br>
+                   <div class="options">
+                     <label for="studentGrade">Student Grade: </label>
+                       <select name="catagoty" id="gradeLevel" required>
+                         <option value="G1">Grade 1</option>
+                         <option value="G2">Grade 2</option>
+                         <option value="G3">Grade 3</option>
+                         <option value="G4">Grade 4</option>
+                         <option value="G5">Grade 5</option>
+                         <option value="G6">Grade 6</option>
+                         <option value="G7">Grade 7</option>
+                         <option value="G8">Grade 8</option>
+                         <option value="G9">Grade 9</option>
+                         <option value="G10">Grade 10</option>
+                       </select> <br>
+                       <label for="studentID" >Student ID: </label>
+                       <input type="studentID" name="Student ID" required>
+                   </div><br>
+                   <div class="options" >
+                     <label for="teacher" id="teacher">Select available teacher: </label>
+                       <select name="teachers" id="teacherOptions" required>
+                          <option value="t1" selected>None</option>
+                         <option value="t1">Jhon Stocks</option>
+                         <option value="t2">Apple Gum</option>
+                         <option value="t3">Chanya Krishman</option>
+                         <option value="t4">Michel Phillips</option>
+                       </select>
+                   </div>
+                   <div class="name" >
+                     <label for="name">Your Name: </label>
+                     <input type="text" name="fname" id="name" required>
+                   </div>
+                   <div class="address" id="address">
+                        <label for="street">Street Name: </label>
+                        <input type="text" name="street" id="street" > <br>
+                        <label for="suburb">Suburb: </label>
+                        <input type="text" name="suburb" id="suburb" ><br>
+                        <label for="state">State: </label>
+                        <input type="text" name="state" id="state" > <br>
+                        <label for="zip">Zip Code: </label>
+                        <input type="text" name="zip" id="zip" > <br>
+                   </div>
+                   <div class="email" >
+                        <label for="email">Email Address: </label>
+                        <input type="text" name="email" id="email">  <br>
+                   </div>
+                   <div class="phone" >
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" name="phone" id="phone" required> <br>
+                   </div><br>
+                   <div class="others">
+                        <label>Please tell us a brief about the issue:-</label><br>
+                        <textarea name="others" rows="5" cols="25"></textarea>
+                   </div>
+
+                   <button type="submit" name="submit">Submit Form</button>
+                   <br><br><br><br><br>
+                 </fieldset>
+
+               </form>
+
+        </section>
+
+
+      </main>
+      <footer>
+
+      </footer>
     </div>
+
+    <script src="js/school.js"></script>
     </body>
 </html>

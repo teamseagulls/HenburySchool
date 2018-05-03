@@ -1,0 +1,53 @@
+body{
+  background: #292F36;
+}
+fieldset{
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+}
+.requestform{
+  background: #F5F1E3;
+  color: #173753;
+}
+h2 {
+  text-align: center;
+}
+p{
+  padding: 8px;
+}
+div{
+  padding-bottom: 5px;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+}
+
+label{
+  display: block;
+  margin: auto;
+}
+input[type="text"],input[type="email"]{
+  margin: .5em;
+  width:90%;
+}
+input:focus{
+  background-color: #F2F3D9;
+}
+input:active{
+  background-color: #BCF8EC;
+}
+#zip{max-width: 10em;}
+@media (min-width:30em) {
+  label{
+    display:block;
+  }
+  input[type="text"],input[type="tel"],input[type="email"]{
+    margin: .2em auto .8em auto;
+    width:400px;
+  }
+  fieldset{
+      margin-left: 3em;
+  }
+}
