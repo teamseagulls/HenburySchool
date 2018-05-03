@@ -13,10 +13,10 @@ body{
 }
 
 .navigation{
-  background-color:#385077 ;
-  border-radius: 4px;
   max-width: 500px;
   width:90%;
+  background-color:#385077;
+  border-radius: 4px;
   margin:20px auto 0;
 }
 
@@ -29,15 +29,15 @@ body{
   display: block;
   text-decoration: none;
   color:white;
-  padding-left: 10px;
   line-height: 36px;
+  padding-left: 10px;
 }
 
 /*set style for the level one menu*/
 .level_one_menu>li>a{
+  font-weight:400;
   text-transform: uppercase;
   border-bottom: 1px solid black;
-  font-weight:400;
 }
 
 .level_one_menu>li>a:active{
