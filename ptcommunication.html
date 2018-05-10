@@ -74,7 +74,7 @@
                           <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
                           <div>
                                 <label>Please select a catagory. <br> I'm a:
-                                  <select name="catagory" required>
+                                  <select name="catagory" multiple required>
                                    <option value="null" selected>Choose One</option>
                                     <option value="guardian">Guardian</option>
                                     <option value="stuff">Stuff</option>
@@ -84,7 +84,7 @@
                           </div><br>
                           <div>
                             <label>Student Grade: </label>
-                              <select name="catagoty" required>
+                              <select name="catagoty" multiple required>
                               <option value="null"  selected>Choose One</option>
                                 <option value="G1" >Grade 1</option>
                                 <option value="G2">Grade 2</option>
@@ -98,11 +98,11 @@
                                 <option value="G10">Grade 10</option>
                               </select> <br>
                               <label >Student ID: </label>
-                              <input type="text"required>
+                              <input type="text" required>
                           </div><br>
                           <div >
                             <label >Select available Members: </label>
-                              <select name="members" required>
+                              <select name="members" multiple required>
                                 <option value="null" selected>Choose one</option>
                                 <option value="t1">Jhon Stocks</option>
                                 <option value="t2">Apple Gum</option>
@@ -110,19 +110,19 @@
                                 <option value="t4">Michel Phillips</option>
                               </select>
                           </div>
-                          <div class="name" >
+                          <div class="name">
                             <label>Your Name: </label>
                             <input type="text" required>
                           </div>
                           <div class="address">
                                <label >Street Name: </label>
-                               <input type="text" > <br>
+                               <input type="text"> <br>
                                <label >Suburb: </label>
-                               <input type="text"  ><br>
+                               <input type="text"><br>
                                <label >State: </label>
-                               <input type="text"  > <br>
+                               <input type="text"> <br>
                                <label >Zip Code: </label>
-                               <input type="text" calss="zip"> <br>
+                               <input type="text"> <br>
                           </div>
                           <div class="email" >
                                <label >Email Address: </label>
@@ -149,9 +149,8 @@
                           <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
                           <div>
                             <label>Please select a catagory. <br> I'm a:
-                              <select name="catagoty" required>
-                                  <option value="null" sselected>Choose a one</option>
-                                <option value="guardian">Guardian</option>
+                              <select name="catagoty" multiple required>
+                                <option value="guardian" selected>Guardian</option>
                                 <option value="stuff">Stuff</option>
                                 <option value="student">Student</option>
                               </select>
@@ -159,9 +158,9 @@
                           </div><br>
                           <div>
                             <label >Student Grade: </label>
-                              <select name="catagoty" required>
-                                <option value="null" selected>Choose a one</option>
-                                <option value="G1">Grade 1</option>
+                              <select name="catagoty" multiple required>
+
+                                <option value="G1" selected>Grade 1</option>
                                 <option value="G2">Grade 2</option>
                                 <option value="G3">Grade 3</option>
                                 <option value="G4">Grade 4</option>
@@ -177,9 +176,9 @@
                           </div><br>
                           <div >
                             <label >Select available teacher: </label>
-                              <select name="teachers" required>
-                                <option value="t1" selected>None</option>
-                                <option value="t1">Jhon Stocks</option>
+                              <select name="teachers" multiple required>
+
+                                <option value="t1" selected>Jhon Stocks</option>
                                 <option value="t2">Apple Gum</option>
                                 <option value="t3">Chanya Krishman</option>
                                 <option value="t4">Michel Phillips</option>
@@ -225,8 +224,8 @@
                         <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
                         <div>
                           <label >Please select a catagory. <br> I'm a:
-                            <select name="catagoty" id="regOption" required>
-                              <option value="guardian">Guardian</option>
+                            <select name="catagoty" id="regOption" multiple required>
+                              <option value="guardian" selected>Guardian</option>
                               <option value="stuff">Stuff</option>
                               <option value="student">Student</option>
                             </select>
@@ -234,8 +233,8 @@
                         </div><br>
                         <div>
                           <label >Student Grade: </label>
-                            <select name="catagoty">
-                              <option value="G1">Grade 1</option>
+                            <select name="catagoty" multiple>
+                              <option value="G1" selected>Grade 1</option>
                               <option value="G2">Grade 2</option>
                               <option value="G3">Grade 3</option>
                               <option value="G4">Grade 4</option>
@@ -251,9 +250,9 @@
                         </div><br>
                         <div >
                           <label>Select form available Staffs: </label>
-                            <select name="teachers" required>
-                              <option value="t1" selected>None</option>
-                              <option value="t1">Jhon Stocks</option>
+                            <select name="teachers" multiple required>
+
+                              <option value="t1" selected>Jhon Stocks</option>
                               <option value="t2">Apple Gum</option>
                               <option value="t3">Chanya Krishman</option>
                               <option value="t4">Michel Phillips</option>
