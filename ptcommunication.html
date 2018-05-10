@@ -73,9 +73,9 @@
                       <fieldset>
                           <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
                           <div>
-                                <label for="catagoty" id="catagoty">Please select a catagory. <br> I'm a:
-                                  <select mane="catagoty" required>
-                                    <option value="None" selected>None</option>
+                                <label>Please select a catagory. <br> I'm a:
+                                  <select name="catagory" required>
+                                   <option value="null" selected>Choose One</option>
                                     <option value="guardian">Guardian</option>
                                     <option value="stuff">Stuff</option>
                                     <option value="student">Student</option>
@@ -83,9 +83,10 @@
                                 </label>
                           </div><br>
                           <div>
-                            <label for="studentGrade" id="studentGrade">Student Grade: </label>
+                            <label>Student Grade: </label>
                               <select name="catagoty" required>
-                                <option value="G1">Grade 1</option>
+                              <option value="null"  selected>Choose One</option>
+                                <option value="G1" >Grade 1</option>
                                 <option value="G2">Grade 2</option>
                                 <option value="G3">Grade 3</option>
                                 <option value="G4">Grade 4</option>
@@ -96,13 +97,13 @@
                                 <option value="G9">Grade 9</option>
                                 <option value="G10">Grade 10</option>
                               </select> <br>
-                              <label for="studentID" id="studentID" >Student ID: </label>
+                              <label >Student ID: </label>
                               <input type="text"required>
                           </div><br>
                           <div >
-                            <label for="members" id="members">Select available Members: </label>
+                            <label >Select available Members: </label>
                               <select name="members" required>
-                                <option value="t1" selected>None</option>
+                                <option value="null" selected>Choose one</option>
                                 <option value="t1">Jhon Stocks</option>
                                 <option value="t2">Apple Gum</option>
                                 <option value="t3">Chanya Krishman</option>
@@ -110,26 +111,26 @@
                               </select>
                           </div>
                           <div class="name" >
-                            <label f>Your Name: </label>
-                            <input type="text" name="fname" id="name" required>
+                            <label>Your Name: </label>
+                            <input type="text" required>
                           </div>
-                          <div class="address" for="address" id="address">
+                          <div class="address">
                                <label >Street Name: </label>
-                               <input type="text" name="street" id="street" > <br>
+                               <input type="text" > <br>
                                <label >Suburb: </label>
-                               <input type="text" name="suburb" id="suburb" ><br>
+                               <input type="text"  ><br>
                                <label >State: </label>
-                               <input type="text" name="state" id="state" > <br>
+                               <input type="text"  > <br>
                                <label >Zip Code: </label>
-                               <input type="text" name="zip" id="zip" > <br>
+                               <input type="text" calss="zip"> <br>
                           </div>
                           <div class="email" >
                                <label >Email Address: </label>
-                               <input type="text" name="email" id="email">  <br>
+                               <input type="text" >  <br>
                           </div>
                           <div class="phone" >
                                <label >Phone Number: </label>
-                               <input type="tel" name="phone" id="phone" required> <br>
+                               <input type="tel" required> <br>
                           </div><br>
                           <div class="others">
                                <label>Please tell us a brief about the issue:-</label><br>
@@ -147,8 +148,9 @@
                       <form class="booking" action="self" method="post">  <fieldset>
                           <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
                           <div>
-                            <label for="catagoty" id="catagoty">Please select a catagory. <br> I'm a:
-                              <select name="catagoty" id="regOption" required>
+                            <label>Please select a catagory. <br> I'm a:
+                              <select name="catagoty" required>
+                                  <option value="null" sselected>Choose a one</option>
                                 <option value="guardian">Guardian</option>
                                 <option value="stuff">Stuff</option>
                                 <option value="student">Student</option>
@@ -156,8 +158,9 @@
                             </label>
                           </div><br>
                           <div>
-                            <label for="studentGrade" id="studentGrade">Student Grade: </label>
-                              <select name="catagoty" id="gradeLevel" required>
+                            <label >Student Grade: </label>
+                              <select name="catagoty" required>
+                                <option value="null" selected>Choose a one</option>
                                 <option value="G1">Grade 1</option>
                                 <option value="G2">Grade 2</option>
                                 <option value="G3">Grade 3</option>
@@ -169,11 +172,11 @@
                                 <option value="G9">Grade 9</option>
                                 <option value="G10">Grade 10</option>
                               </select> <br>
-                              <label for="studentID" id="studentID">Student ID: </label>
+                              <label >Student ID: </label>
                               <input type="studentID" name="Student ID" required>
                           </div><br>
                           <div >
-                            <label for="teacher" id="teacher">Select available teacher: </label>
+                            <label >Select available teacher: </label>
                               <select name="teachers" required>
                                 <option value="t1" selected>None</option>
                                 <option value="t1">Jhon Stocks</option>
@@ -184,25 +187,25 @@
                           </div>
                           <div class="name" >
                             <label>Your Name: </label>
-                            <input type="text" name="fname" id="name" required>
+                            <input type="text" required>
                           </div>
-                          <div class="address" id="address">
+                          <div class="address">
                                <label >Street Name: </label>
-                               <input type="text" name="street" id="street" > <br>
+                               <input type="text"  > <br>
                                <label >Suburb: </label>
-                               <input type="text" name="suburb" id="suburb" ><br>
+                               <input type="text"  ><br>
                                <label >State: </label>
-                               <input type="text" name="state" id="state" > <br>
+                               <input type="text"  > <br>
                                <label >Zip Code: </label>
-                               <input type="text" name="zip" id="zip" > <br>
+                               <input type="text"  > <br>
                           </div>
                           <div class="email" >
-                          >Email Address: </label>
-                               <input type="text" name="email" id="email">  <br>
+                          <label>Email Address: </label>
+                               <input type="text">  <br>
                           </div>
                           <div class="phone" >
                                <label >Phone Number: </label>
-                               <input type="tel" name="phone" id="phone" required> <br>
+                               <input type="tel"  required> <br>
                           </div><br>
                           <div class="others">
                                <label>Please tell us a brief about the issue:-</label><br>
@@ -230,7 +233,7 @@
                           </label>
                         </div><br>
                         <div>
-                          <label for="studentGrade" id="studentGrade" >Student Grade: </label>
+                          <label >Student Grade: </label>
                             <select name="catagoty">
                               <option value="G1">Grade 1</option>
                               <option value="G2">Grade 2</option>
@@ -247,8 +250,8 @@
                             <input type="studentID" name="Student ID">
                         </div><br>
                         <div >
-                          <label for="teacher" id="teacher">Select form available Staffs: </label>
-                            <select name="teachers" id="teacher" required>
+                          <label>Select form available Staffs: </label>
+                            <select name="teachers" required>
                               <option value="t1" selected>None</option>
                               <option value="t1">Jhon Stocks</option>
                               <option value="t2">Apple Gum</option>
@@ -258,25 +261,25 @@
                         </div>
                         <div class="name" >
                           <label >Your Name: </label>
-                          <input type="text" name="fname" id="name" required>
+                          <input type="text" required>
                         </div>
                         <div class="address" id="address">
                              <label >Street Name: </label>
-                             <input type="text" name="street" id="street" > <br>
+                             <input type="text"> <br>
                              <label >Suburb: </label>
-                             <input type="text" name="suburb" id="suburb" ><br>
+                             <input type="text"  ><br>
                              <label >State: </label>
-                             <input type="text" name="state" id="state" > <br>
+                             <input type="text"  > <br>
                              <label >Zip Code: </label>
-                             <input type="text" name="zip" id="zip" > <br>
+                             <input type="text" > <br>
                         </div>
                         <div class="email" >
                              <label >Email Address: </label>
-                             <input type="text" name="email" id="email">  <br>
+                             <input type="text" >  <br>
                         </div>
                         <div class="phone" >
                              <label>Phone Number: </label>
-                             <input type="tel" name="phone" id="phone" required> <br>
+                             <input type="tel"  required> <br>
                         </div><br>
                         <div class="others">
                              <label>Please tell us a way to help you:-</label><br>
@@ -288,8 +291,6 @@
                       </fieldset>
                     </form></div>
         </section>
-
-
       </main>
       <footer>
 
