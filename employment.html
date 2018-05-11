@@ -3,128 +3,184 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="css/school.css">
-      <link rel="stylesheet" href="css/stylescard.css">
     <title>Henbury School website </title>
+    <link rel="stylesheet" href="css/school.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/carouseljob.css">
+    <link rel="stylesheet" href="css/applyjob.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="body">
-        <div class="header">
-          <header>
-            <div class="nav-container">
-              <nav class="navigation">
-                <ul class="level_one_menu">
-                  <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
-                    <ul class="level_two_menu about">
-                      <li>  <a href="outreachclass.html">Outreach Class</a> </li>
-                      <li>  <a href="annualreport.html">Anual Report</a> </li>
-                      <li>  <a href="council.html">Council</a> </li>
-                      <li>  <a href="employment.html">Employment</a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="enrol.html">Enrol</a></li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
-                    <ul class="level_two_menu news_events">
-                      <li> <a href="news.html">News </a> </li>
-                      <li> <a href="events.html">Events </a> </li>
-                      <li> <a href="calendar.html">Calendar </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
-                    <ul class="level_two_menu fundraising">
-                      <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
-                      <li> <a href="otherhelp.html">Other Help </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
-                    <ul class="level_two_menu parents_portal">
-                      <li> <a href="teachingteam.html">Teaching Team </a> </li>
-                      <li> <a href="afterschoolcare.html">After School Care</a> </li>
-                    <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#">Programs</a></li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
-                    <ul class="level_two_menu contact">
-                      <li> <a href="absence.html">Absence </a> </li>
-                      <li> <a href="enquery.html">Enquary </a> </li>
-                      <li> <a href="faq.html">FAQ </a> </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
+
+    <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <header>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul class="level_one_menu">
+            <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
+              <ul class="level_two_menu about">
+                <li>  <a href="outreachclass.html">Outreach Class</a> </li>
+                <li>  <a href="annualreport.html">Anual Report</a> </li>
+                <li>  <a href="council.html">Council</a> </li>
+                <li>  <a href="employment.html">Employment</a> </li>
+              </ul>
+            </li>
+
+            <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
+              <ul class="level_two_menu news_events">
+                <li> <a href="news.html">News </a> </li>
+                <li> <a href="newsevents.html">Events </a> </li>
+                <li> <a href="calendar.html">Calendar </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
+              <ul class="level_two_menu fundraising">
+                <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+                <li> <a href="otherhelp.html">Other Help </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
+              <ul class="level_two_menu parents_portal">
+                <li> <a href="teachingteam.html">Teaching Team </a> </li>
+                <li> <a href="afterschoolcare.html">After School Care</a> </li>
+              <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
+              </ul>
+            </li>
+            <li> <a href="#">Programs</a></li>
+            <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
+              <ul class="level_two_menu contact">
+                <li> <a href="absence.html">Absence </a> </li>
+                <li> <a href="enquery.html">Enquary </a> </li>
+                <li> <a href="faq.html">FAQ </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2>Employment</h2>
+      <hr/>
+      <div id="myCarousel" class="carousel slide myCarousel" data-interval="false" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <!--put img inside itens like this-->
+          <!--<img src="" alt="...">-->
+            <div class="container">
+        <div class="carousel-caption">
+              <h3 style="color:black; margin-top:100px">Join Henbury School</h3>
+              <p>We are always on the lookout for new people to join our team-especially relief staffs.
+              Are you the one who enjoy working with students with special needs</p>
             </div>
-            <h1>EMPLOYMENT OPPORTUNITIES</h1>
-          </header>
+            </div>
         </div>
-          <main>
-
-              <section class="containerpara">
-                <div>
-                    <p>Henbury School is an innovative educational community with high academic standards and a strong pastoral and co-curricular program.<br><br>
-                        We are dedicated to educating girls for the 21st Century and developing confident, independent studetns. </p>
-                        <section class="containerpara">
-                            <h2>POSITIONS VACANT</h2>
-                              <div>
-                                      <p>Positions currently available <br> <br></p>
-                                      <h2>Click to apply</h2><br><br>
-                                        <fieldset>
-                                                <div class="mycards">
-                                                  <a href="jobform.html" >
-                                                    <div class="card card-1">
-                                                        <div class="cardtitle">  <h2>CASUAL TEACHERS</h2>  </div>
-                                                          <div class="cardmedia">  <img src="images/teacher1.jpg" id="teacher"alt=""> </a> </div>
-                                                              <div class="cardtext">
-                                                                <p>  Contract Type: Casual<br>
-                                                                  Commencing:
-                                                                  <br>
-                                                                  Closing Date: Ongoing
-                                                                  <br>
-                                                               </p>
-                                                               <p>The School is seeking applications from dynamic, motivated and enthusiastic educators who would enjoy working in a team which aims to make a difference.No media download found.</p>
-                                                            </div>
-                                                          <div class="cardaction">  <div>  <a href="tel: (08) 89977077">Phone (08) 89977077</a> </div>
-                                                              <div>  <a href=mailto:henbury.admin@ntschools.net>Email: henbury.admin@ntschools.net</a></div>
-                                                          </div>
-                                                    </div>
-                                                  </a>
-                                                  <a href="jobform.html" >
-                                                    <div class="card card-2">
-                                                      <div class="cardtitle"><h2>MUSIC TEACHER</h2>  </div>
-                                                        <div class="cardmedia">  <img src="images/musicteacher.jpg" id="teacher"alt=""> </a> </div>
-                                                      <div class="cardtext">
-                                                        <p>  Contract Type: Maternity leave position - temporary part time 0.8
-                                                                <br>
-                                                                Commencing: 4 June 2018 and concluding 19 July 2019
-                                                                <br>
-                                                                 Closing Date: Tuesday 8 May 2018 at 4pm
-                                                                <br>
-                                                       </p>
-                                                       <p>The School is seeking applications from dynamic, motivated and enthusiastic educators who would enjoy working in a team which aims to make a difference.No media download found.</p>  </div>
-                                                        <div class="cardaction">
-                                                           <div>  <a href="tel: (08) 89977077">Phone (08) 89977077</a> </div>
-                                                            <div><a href=mailto:henbury.admin@ntschools.net>Email: henbury.admin@ntschools.net</a>  </div>
-                                                          </div>
-                                                  </div>
-                                            </a>
-                                              </div>
-                                      </fieldset>
-
-                              </div>
-
-                        </section>
-              </div>
-
-
-
-
-          </main>
-          <footer>
-
-          </footer>
+        <div class="item">
+            <div class="container">
+            <div class="carousel-caption">
+              <h3 style="color:black; margin-top:100px">Our Requirements</h3>
+              <p>Have experience working as a teacher</p>
+              <p>As a Special Education Support Officer</p>
+              <p>As a Part-Time Instructor</p>
+            </div>
+            </div>
         </div>
+        <div class="item">
+            <div class="container">
+            <div class="carousel-caption">
+              <h3 style="color:black; margin-top:100px">How to Apply</h3>
+              <p>Complete Teacher Registration of Northern Territory Government</p>
+              <p>Complete the Application Form below</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <hr class="transition-timer-carousel-progress-bar" />
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-      <script src="js/school.js"></script>
+        <center>
+          <form method="post">
+        <fieldset>
+          <h1>Apply Now!</h1>
+
+          <div class="user_input">
+
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="fuser_irst_name">
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="user_last_name">
+            </tr>
+          </div>
+
+          <div class="user_input">
+
+          </div>
+
+          <div class="user_input">
+            <label for="mail">Email Address:</label>
+            <input type="email" id="mail" name="user_email">
+          </div>
+
+          <div class="user_input">
+            <label for="phone_num">Telephone Number:</label>
+            <input type="text" id="phone_num" name="user_phone">
+          </div>
+
+          <div class="user_input">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="user_address">
+          </div>
+
+          <div class="user_input">
+            <label for="address">Select the job position:</label>
+            <input type="dropdown" id="address" name="user_address">
+          </div>
+
+          <div class="user_input">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="user_birthdate">
+          </div>
+
+          <div class="user_input">
+            <label for="birthdate">Upload your resume:</label>
+            <input type="text" id="birthdate" name="user_birthdate">
+          </div>
+
+          <div class="user_input button">
+            <button type="submit" onclick="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+
+        </center>
+
+
+
+    </main>
+
+      <footer>
+
+      </footer>
+  <script src="js/school.js"></script>
+    <script src="js/carouseljob.js"></script>
     </body>
 </html>
