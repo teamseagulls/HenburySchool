@@ -1,24 +1,36 @@
 body{
+    background: #2A9D8F;
+}
+.nav-container{
+  display: block;
+}
+.topimage{
   background: #292F36;
+  weight: 200px;
+}
+section{
+    margin: 5%;
+    text-align: center;
 }
 fieldset{
+  background: #D7F2BA;
+  text-align: left;
   box-sizing: border-box;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
 }
 .requestform{
-  background: #F5F1E3;
+      background: #E7ECEF;
   color: #173753;
 }
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #6096BA;
 }
 
 .tab button {
     background-color: inherit;
-    float: left;
+    text-align: justify;
     border: none;
     outline: none;
     cursor: pointer;
@@ -27,10 +39,10 @@ fieldset{
     font-size: 13px;
 }
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #A3CEF1;
 }
 .tab button.active {
-    background-color: #ccc;
+    background-color: #A3CEF1;
 }
 .desc {
     display: none;
@@ -38,6 +50,7 @@ fieldset{
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 }
+fieldset>div{padding-left: 10px;}
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 2;}
@@ -78,9 +91,10 @@ input:active{
   }
   input[type="text"],input[type="tel"],input[type="email"]{
     margin: .2em auto .8em auto;
-    width:400px;
+    width:300px;
   }
   fieldset{
-      margin-left: 3em;
+      margin: 1.5em;
   }
+  fieldset>div{padding-left: 5px;}
 }
