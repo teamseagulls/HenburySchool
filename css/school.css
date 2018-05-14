@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 
 ul{
   list-style-type: none;
@@ -6,13 +10,41 @@ ul{
 body{
   background-color: white;
   font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }
-.navigation{
+
+.nav_container{
   max-width: 500px;
-  width:90%;
-  background-color:#385077;
-  border-radius: 4px;
-  margin:20px auto 0;
+  width:100%;
+  margin:0 auto 0;
+}
+
+/*make the logo and hamburger menu responsively displayed at each side*/
+.nav_bar{
+  background-color:orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px;
+}
+
+.nav_burger{
+  position: relative;
+  width:46px;
+  height:40px;
+}
+
+/*use pseudo element to create hamburger menu; use box-shadow to draw another two lines*/
+.burger:before{
+  content:"";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 36px;
+  height: 6px;
+  background: black;
+  box-shadow: 0 12px 0 0 black, 0 24px 0 0 black;
 }
 
 .level_one_menu{
@@ -20,23 +52,23 @@ body{
   flex-direction: column;
 }
 
+.primary_menu{
+  background-color: grey;
+}
+
+/*select all first and second level menu*/
 .level_one_menu a{
   display: block;
   text-decoration: none;
   color:white;
-  line-height: 36px;
+  line-height: 48px;
   padding-left: 10px;
 }
 
-/*set style for the level one menu*/
+/*set style for the level one menu only*/
 .level_one_menu>li>a{
   font-weight:400;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
-}
-
-.level_one_menu>li>a:active{
-  background-color: #ed782a;
 }
 
 /*set padding for level two menu*/
@@ -44,13 +76,15 @@ body{
   padding-left: 24px;
 }
 
-.level_two_menu>li:active{
-  background-color: #1934a0;
+/*hide the level one menu in default*/
+.navigation{
+  display: none;
 }
 
 /*hide the level two menu in default*/
 .level_two_menu{
   display: none;
+  background-color: black;
 }
 
 /*show the menu when click on it*/
@@ -60,19 +94,39 @@ body{
 
 
 @media only screen and (min-width:900px){
+  .nav_container{
+    max-width: 1200px;
+  }
+
+  /*hide the mobile menu bar in desktop version*/
+  .nav_bar{
+    display: none;
+  }
+
+  /*show level_one dropdown menu in default*/
   .navigation{
-    max-width: 1000px;
+    display:block;
+  }
+
+  .primary_menu{
+    width:100%;
+    margin:5px 20px 0 20px;
   }
 
 /*change the flex direction*/
   .level_one_menu{
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
 /*clear the menu padding*/
   .level_one_menu a{
     padding:0;
+  }
+
+/*hover on primary_menu to see drop down menu*/
+  .level_one_menu>li:hover .level_two_menu{
+    display: block;
   }
 
 /*clear the level two menu padding*/
