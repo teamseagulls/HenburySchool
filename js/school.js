@@ -1,10 +1,16 @@
 /*put the submenu's special class name as arguments, if find a match then add the show class
+<<<<<<< HEAD
 to the submenu
 var arrays = new Array(".about",".news_events",".fundraising",".parents_portal",".contact");
+=======
+to the submenu*/
+var arrays = new Array(".about", ".news_events", ".fundraising", ".parents_portal", ".contact");
+>>>>>>> master
 //store opended submenu
 var openedmenu;
+
 function dropDown(tagId) {
-  if(openedmenu!=null){
+  if (openedmenu != null) {
     //hide the previous opened submenu
     openedmenu.classList.remove("show");
   }
@@ -14,7 +20,7 @@ function dropDown(tagId) {
       console.log(arrays[i]);
       document.querySelector(arrays[i]).classList.toggle("show");
       //record the opened submenu
-      openedmenu=document.querySelector(arrays[i]);
+      openedmenu = document.querySelector(arrays[i]);
     }
   }
 }

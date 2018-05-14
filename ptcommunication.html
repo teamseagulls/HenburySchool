@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="css/school.css">
-    <link rel="stylesheet" href="css/requestform.css">
-    <title>Henbury School website </title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="css/school.css">
+  <link rel="stylesheet" href="css/requestform.css">
+  <title>Henbury School website </title>
+</head>
 
-    <header>
-      <div class="nav-container">
-          <nav class="navigation">
-                <ul class="level_one_menu">
-                  <li> <a href="index.html">Home</a> </li><li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
-                    <ul class="level_two_menu about">
-                      <li>  <a href="outreachclass.html">Outreach Class</a> </li>
-                      <li>  <a href="annualreport.html">Anual Report</a> </li>
-                      <li>  <a href="council.html">Council</a> </li>
-                      <li>  <a href="employment.html">Employment</a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="enrol.html">Enrol</a></li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
-                    <ul class="level_two_menu news_events">
-                      <li> <a href="news.html">News </a> </li>
-                      <li> <a href="events.html">Events </a> </li>
-                      <li> <a href="calendar.html">Calendar </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
-                    <ul class="level_two_menu fundraising">
-                      <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
-                      <li> <a href="otherhelp.html">Other Help </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
-                    <ul class="level_two_menu parents_portal">
-                      <li> <a href="teachingteam.html">Teaching Team </a> </li>
-                      <li> <a href="afterschoolcare.html">After School Care</a> </li>
-                      <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
-                    </ul>
-                  </li>
-                  <li> <a href="#">Programs</a></li>
-                  <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
-                    <ul class="level_two_menu contact">
-                      <li> <a href="absence.html">Absence </a> </li>
-                      <li> <a href="enquery.html">Enquary </a> </li>
-                      <li> <a href="faq.html">FAQ </a> </li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-      </div>
-    </header>
+<body>
 
-    <div class="mainbody">
-      <main>
-        <section class="requestform">
-            <h2>We Care about your Needs</h2>
-            <p> Your aplication will be reviewed by our Adminstration Office and will be Forward to Selected Staff Members.</p>
-                <div class="tab">
-                  <button class="options" onclick="openStaff(event, 'Adminstration')">Adminstration</button>
-                  <button class="options" onclick="openStaff(event, 'Teacher')">Teacher</button>
-                  <button class="options" onclick="openStaff(event, 'OSHC')">OSHC staff</button>
-                </div>
-                <div id="Adminstration" class="desc">
-                      <h3>Adminstration</h3>
-                      <p>Request a meeting with Adminstration office Members:</p>
-                    <form class="booking" action="self" method="post">
-                      <fieldset>
-                          <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-                          <div>
-                                <label>Please select a catagory. <br> I'm a:
+  <header>
+    <div class="nav-container">
+      <nav class="navigation">
+        <ul class="level_one_menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="#" class="dropdown" onclick="dropDown('.about')">About</a>
+            <ul class="level_two_menu about">
+              <li> <a href="outreachclass.html">Outreach Class</a> </li>
+              <li> <a href="annualreport.html">Anual Report</a> </li>
+              <li> <a href="council.html">Council</a> </li>
+              <li> <a href="employment.html">Employment</a> </li>
+            </ul>
+          </li>
+          <li> <a href="enrol.html">Enrol</a></li>
+          <li> <a href="#" class="dropdown" onclick="dropDown('.news_events')">News & Events</a>
+            <ul class="level_two_menu news_events">
+              <li> <a href="news.html">News </a> </li>
+              <li> <a href="events.html">Events </a> </li>
+              <li> <a href="calendar.html">Calendar </a> </li>
+            </ul>
+          </li>
+          <li> <a href="#" class="dropdown" onclick="dropDown('.fundraising')">Fundraising</a>
+            <ul class="level_two_menu fundraising">
+              <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+              <li> <a href="otherhelp.html">Other Help </a> </li>
+            </ul>
+          </li>
+          <li> <a href="#" class="dropdown" onclick="dropDown('.parents_portal')">Parents Portal</a>
+            <ul class="level_two_menu parents_portal">
+              <li> <a href="teachingteam.html">Teaching Team </a> </li>
+              <li> <a href="afterschoolcare.html">After School Care</a> </li>
+              <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Programs</a></li>
+          <li> <a href="#" class="dropdown" onclick="dropDown('.contact')">Contact</a>
+            <ul class="level_two_menu contact">
+              <li> <a href="absence.html">Absence </a> </li>
+              <li> <a href="enquery.html">Enquary </a> </li>
+              <li> <a href="faq.html">FAQ </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mainbody">
+    <main>
+      <section class="requestform">
+        <h2>We Care about your Needs</h2>
+        <p> Your aplication will be reviewed by our Adminstration Office and will be Forward to Selected Staff Members.</p>
+        <div class="tab">
+          <button class="options" onclick="openStaff(event, 'Adminstration')">Adminstration</button>
+          <button class="options" onclick="openStaff(event, 'Teacher')">Teacher</button>
+          <button class="options" onclick="openStaff(event, 'OSHC')">OSHC staff</button>
+        </div>
+        <div id="Adminstration" class="desc">
+          <h3>Adminstration</h3>
+          <p>Request a meeting with Adminstration office Members:</p>
+          <form class="booking" action="self" method="post">
+            <fieldset>
+              <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
+              <div>
+                <label>Please select a catagory. <br> I'm a:
                                   <select name="catagory" multiple required>
                                    <option value="null" selected>Choose One</option>
                                     <option value="guardian">Guardian</option>
@@ -81,10 +83,10 @@
                                     <option value="student">Student</option>
                                   </select>
                                 </label>
-                          </div><br>
-                          <div>
-                            <label>Student Grade: </label>
-                              <select name="catagoty" multiple required>
+              </div><br>
+              <div>
+                <label>Student Grade: </label>
+                <select name="catagoty" multiple required>
                               <option value="null"  selected>Choose One</option>
                                 <option value="G1" >Grade 1</option>
                                 <option value="G2">Grade 2</option>
@@ -97,68 +99,69 @@
                                 <option value="G9">Grade 9</option>
                                 <option value="G10">Grade 10</option>
                               </select> <br>
-                              <label >Student ID: </label>
-                              <input type="text" required>
-                          </div><br>
-                          <div >
-                            <label >Select available Members: </label>
-                              <select name="members" multiple required>
+                <label>Student ID: </label>
+                <input type="text" required>
+              </div><br>
+              <div>
+                <label>Select available Members: </label>
+                <select name="members" multiple required>
                                 <option value="null" selected>Choose one</option>
                                 <option value="t1">Jhon Stocks</option>
                                 <option value="t2">Apple Gum</option>
                                 <option value="t3">Chanya Krishman</option>
                                 <option value="t4">Michel Phillips</option>
                               </select>
-                          </div>
-                          <div class="name">
-                            <label>Your Name: </label>
-                            <input type="text" required>
-                          </div>
-                          <div class="address">
-                               <label >Street Name: </label>
-                               <input type="text"> <br>
-                               <label >Suburb: </label>
-                               <input type="text"><br>
-                               <label >State: </label>
-                               <input type="text"> <br>
-                               <label >Zip Code: </label>
-                               <input type="text"> <br>
-                          </div>
-                          <div class="email" >
-                               <label >Email Address: </label>
-                               <input type="text" >  <br>
-                          </div>
-                          <div class="phone" >
-                               <label >Phone Number: </label>
-                               <input type="tel" required> <br>
-                          </div><br>
-                          <div class="others">
-                               <label>Please tell us a brief about the issue:-</label><br>
-                               <textarea name="others" rows="5" cols="25"></textarea>
-                          </div>
+              </div>
+              <div class="name">
+                <label>Your Name: </label>
+                <input type="text" required>
+              </div>
+              <div class="address">
+                <label>Street Name: </label>
+                <input type="text"> <br>
+                <label>Suburb: </label>
+                <input type="text"><br>
+                <label>State: </label>
+                <input type="text"> <br>
+                <label>Zip Code: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="email">
+                <label>Email Address: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="phone">
+                <label>Phone Number: </label>
+                <input type="tel" required> <br>
+              </div><br>
+              <div class="others">
+                <label>Please tell us a brief about the issue:-</label><br>
+                <textarea name="others" rows="5" cols="25"></textarea>
+              </div>
 
-                          <button type="submit" name="submit">Submit Form</button>
-                          <br><br><br><br><br>
-                        </fieldset>
-                      </form>
-                  </div>
-                <div id="Teacher" class="desc">
-                      <h3>Teacher</h3>
-                      <p>To get in touch with our teachers please fill up the form:</p>
-                      <form class="booking" action="self" method="post">  <fieldset>
-                          <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-                          <div>
-                            <label>Please select a catagory. <br> I'm a:
+              <button type="submit" name="submit">Submit Form</button>
+              <br><br><br><br><br>
+            </fieldset>
+          </form>
+        </div>
+        <div id="Teacher" class="desc">
+          <h3>Teacher</h3>
+          <p>To get in touch with our teachers please fill up the form:</p>
+          <form class="booking" action="self" method="post">
+            <fieldset>
+              <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
+              <div>
+                <label>Please select a catagory. <br> I'm a:
                               <select name="catagoty" multiple required>
                                 <option value="guardian" selected>Guardian</option>
                                 <option value="stuff">Stuff</option>
                                 <option value="student">Student</option>
                               </select>
                             </label>
-                          </div><br>
-                          <div>
-                            <label >Student Grade: </label>
-                              <select name="catagoty" multiple required>
+              </div><br>
+              <div>
+                <label>Student Grade: </label>
+                <select name="catagoty" multiple required>
 
                                 <option value="G1" selected>Grade 1</option>
                                 <option value="G2">Grade 2</option>
@@ -171,69 +174,69 @@
                                 <option value="G9">Grade 9</option>
                                 <option value="G10">Grade 10</option>
                               </select> <br>
-                              <label >Student ID: </label>
-                              <input type="studentID" name="Student ID" required>
-                          </div><br>
-                          <div >
-                            <label >Select available teacher: </label>
-                              <select name="teachers" multiple required>
+                <label>Student ID: </label>
+                <input type="studentID" name="Student ID" required>
+              </div><br>
+              <div>
+                <label>Select available teacher: </label>
+                <select name="teachers" multiple required>
 
                                 <option value="t1" selected>Jhon Stocks</option>
                                 <option value="t2">Apple Gum</option>
                                 <option value="t3">Chanya Krishman</option>
                                 <option value="t4">Michel Phillips</option>
                               </select>
-                          </div>
-                          <div class="name" >
-                            <label>Your Name: </label>
-                            <input type="text" required>
-                          </div>
-                          <div class="address">
-                               <label >Street Name: </label>
-                               <input type="text"  > <br>
-                               <label >Suburb: </label>
-                               <input type="text"  ><br>
-                               <label >State: </label>
-                               <input type="text"  > <br>
-                               <label >Zip Code: </label>
-                               <input type="text"  > <br>
-                          </div>
-                          <div class="email" >
-                          <label>Email Address: </label>
-                               <input type="text">  <br>
-                          </div>
-                          <div class="phone" >
-                               <label >Phone Number: </label>
-                               <input type="tel"  required> <br>
-                          </div><br>
-                          <div class="others">
-                               <label>Please tell us a brief about the issue:-</label><br>
-                               <textarea name="others" rows="5" cols="25"></textarea>
-                          </div>
+              </div>
+              <div class="name">
+                <label>Your Name: </label>
+                <input type="text" required>
+              </div>
+              <div class="address">
+                <label>Street Name: </label>
+                <input type="text"> <br>
+                <label>Suburb: </label>
+                <input type="text"><br>
+                <label>State: </label>
+                <input type="text"> <br>
+                <label>Zip Code: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="email">
+                <label>Email Address: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="phone">
+                <label>Phone Number: </label>
+                <input type="tel" required> <br>
+              </div><br>
+              <div class="others">
+                <label>Please tell us a brief about the issue:-</label><br>
+                <textarea name="others" rows="5" cols="25"></textarea>
+              </div>
 
-                          <button type="submit" name="submit">Submit Form</button>
-                          <br><br><br><br><br>
-                        </fieldset>
-                      </form>
-                  </div>
-                <div id="OSHC" class="desc">
-                    <h3>OSHC (After School Care Staff)</h3>
-                    <p>Requestig a meeting with OSHC staff has never been so easy:</p>
-                   <form class="booking" action="self" method="post">
-                         <fieldset>
-                        <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-                        <div>
-                          <label >Please select a catagory. <br> I'm a:
+              <button type="submit" name="submit">Submit Form</button>
+              <br><br><br><br><br>
+            </fieldset>
+          </form>
+        </div>
+        <div id="OSHC" class="desc">
+          <h3>OSHC (After School Care Staff)</h3>
+          <p>Requestig a meeting with OSHC staff has never been so easy:</p>
+          <form class="booking" action="self" method="post">
+            <fieldset>
+              <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
+              <div>
+                <label>Please select a catagory. <br> I'm a:
                             <select name="catagoty" id="regOption" multiple required>
                               <option value="guardian" selected>Guardian</option>
                               <option value="stuff">Stuff</option>
                               <option value="student">Student</option>
                             </select>
                           </label>
-                        </div><br>
-                        <div>
-                          <label >Student Grade: </label>
-                            <select name="catagoty" multiple>
+              </div><br>
+              <div>
+                <label>Student Grade: </label>
+                <select name="catagoty" multiple>
                               <option value="G1" selected>Grade 1</option>
                               <option value="G2">Grade 2</option>
                               <option value="G3">Grade 3</option>
@@ -245,58 +248,60 @@
                               <option value="G9">Grade 9</option>
                               <option value="G10">Grade 10</option>
                             </select> <br>
-                            <label >Student ID: </label>
-                            <input type="studentID" name="Student ID">
-                        </div><br>
-                        <div >
-                          <label>Select form available Staffs: </label>
-                            <select name="teachers" multiple required>
+                <label>Student ID: </label>
+                <input type="studentID" name="Student ID">
+              </div><br>
+              <div>
+                <label>Select form available Staffs: </label>
+                <select name="teachers" multiple required>
 
                               <option value="t1" selected>Jhon Stocks</option>
                               <option value="t2">Apple Gum</option>
                               <option value="t3">Chanya Krishman</option>
                               <option value="t4">Michel Phillips</option>
                             </select>
-                        </div>
-                        <div class="name" >
-                          <label >Your Name: </label>
-                          <input type="text" required>
-                        </div>
-                        <div class="address" id="address">
-                             <label >Street Name: </label>
-                             <input type="text"> <br>
-                             <label >Suburb: </label>
-                             <input type="text"  ><br>
-                             <label >State: </label>
-                             <input type="text"  > <br>
-                             <label >Zip Code: </label>
-                             <input type="text" > <br>
-                        </div>
-                        <div class="email" >
-                             <label >Email Address: </label>
-                             <input type="text" >  <br>
-                        </div>
-                        <div class="phone" >
-                             <label>Phone Number: </label>
-                             <input type="tel"  required> <br>
-                        </div><br>
-                        <div class="others">
-                             <label>Please tell us a way to help you:-</label><br>
-                             <textarea name="others" rows="5" cols="25"></textarea>
-                        </div>
+              </div>
+              <div class="name">
+                <label>Your Name: </label>
+                <input type="text" required>
+              </div>
+              <div class="address" id="address">
+                <label>Street Name: </label>
+                <input type="text"> <br>
+                <label>Suburb: </label>
+                <input type="text"><br>
+                <label>State: </label>
+                <input type="text"> <br>
+                <label>Zip Code: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="email">
+                <label>Email Address: </label>
+                <input type="text"> <br>
+              </div>
+              <div class="phone">
+                <label>Phone Number: </label>
+                <input type="tel" required> <br>
+              </div><br>
+              <div class="others">
+                <label>Please tell us a way to help you:-</label><br>
+                <textarea name="others" rows="5" cols="25"></textarea>
+              </div>
 
-                        <button type="submit" name="submit">Submit Form</button>
-                        <br><br><br><br><br>
-                      </fieldset>
-                    </form></div>
-        </section>
-      </main>
-      <footer>
+              <button type="submit" name="submit">Submit Form</button>
+              <br><br><br><br><br>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
 
-      </footer>
-    </div>
+    </footer>
+  </div>
 
-    <script src="js/school.js"></script>
-    <script src="js/ashraf.js"></script>
-    </body>
+  <script src="js/school.js"></script>
+  <script src="js/ashraf.js"></script>
+</body>
+
 </html>

@@ -1,100 +1,133 @@
-body{
-    background: #2A9D8F;
+body {
+  background: #2A9D8F;
 }
-.nav-container{
+
+.nav-container {
   display: block;
 }
-.topimage{
+
+.topimage {
   background: #292F36;
   weight: 200px;
 }
-section{
-    margin: 5%;
-    text-align: center;
+
+section {
+  margin: 5%;
+  text-align: center;
 }
-fieldset{
+
+fieldset {
   background: #D7F2BA;
   text-align: left;
   box-sizing: border-box;
   padding: 5px;
 }
-.requestform{
-      background: #E7ECEF;
+
+.requestform {
+  background: #E7ECEF;
   color: #173753;
 }
+
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #6096BA;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #6096BA;
 }
 
 .tab button {
-    background-color: inherit;
-    text-align: justify;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 14px;
-    transition: 0.3s;
-    font-size: 13px;
+  background-color: inherit;
+  text-align: justify;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: 0.3s;
+  font-size: 13px;
 }
+
 .tab button:hover {
-    background-color: #A3CEF1;
+  background-color: #A3CEF1;
 }
+
 .tab button.active {
-    background-color: #A3CEF1;
+  background-color: #A3CEF1;
 }
+
 .desc {
-    display: none;
-    padding: 6px 10px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+  display: none;
+  padding: 6px 10px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
 }
-fieldset>div{padding-left: 10px;}
+
+fieldset>div {
+  padding-left: 10px;
+}
+
 @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 2;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 2;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
+
 h2 {
   text-align: center;
 }
-p{
+
+p {
   padding: 8px;
 }
-div{
+
+div {
   padding-bottom: 5px;
 }
 
-label{
+label {
   display: block;
   margin: auto;
 }
-input[type="text"],input[type="email"]{
+
+input[type="text"], input[type="email"] {
   margin: .5em;
-  width:90%;
+  width: 90%;
 }
-input:focus{
+
+input:focus {
   background-color: #F2F3D9;
 }
-input:active{
+
+input:active {
   background-color: #BCF8EC;
 }
-#zip{max-width: 10em;}
+
+#zip {
+  max-width: 10em;
+}
+
 @media (min-width:30em) {
-  label{
-    display:block;
+  label {
+    display: block;
   }
-  input[type="text"],input[type="tel"],input[type="email"]{
+  input[type="text"], input[type="tel"], input[type="email"] {
     margin: .2em auto .8em auto;
-    width:300px;
+    width: 300px;
   }
-  fieldset{
-      margin: 1.5em;
+  fieldset {
+    margin: 1.5em;
   }
-  fieldset>div{padding-left: 5px;}
+  fieldset>div {
+    padding-left: 5px;
+  }
 }
