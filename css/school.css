@@ -1,43 +1,44 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-body{
+body {
   background-color: white;
-  font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
 
-.nav_container{
+.nav_container {
   max-width: 800px;
-  width:100%;
-  margin:0 auto 0;
+  width: 100%;
+  margin: 0 auto 0;
 }
 
 /*make the logo and hamburger menu responsively displayed at each side*/
-.nav_bar{
-  background-color:orange;
+
+.nav_bar {
+  background-color: orange;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:5px;
+  padding: 5px;
 }
 
-.nav_burger{
+.nav_burger {
   position: relative;
-  width:46px;
-  height:40px;
+  width: 46px;
+  height: 40px;
 }
 
 /*use pseudo element to create hamburger menu; use box-shadow to draw another two lines*/
-.burger:before{
-  content:"";
+
+.burger:before {
+  content: "";
   position: absolute;
   left: 5px;
   top: 5px;
@@ -47,91 +48,88 @@ body{
   box-shadow: 0 12px 0 0 black, 0 24px 0 0 black;
 }
 
-.level_one_menu{
+.level_one_menu {
   display: flex;
   flex-direction: column;
 }
 
-.primary_menu{
+.primary_menu {
   background-color: grey;
 }
 
 /*select all first and second level menu*/
-.level_one_menu a{
+
+.level_one_menu a {
   display: block;
   text-decoration: none;
-  color:white;
+  color: white;
   line-height: 48px;
   padding-left: 10px;
 }
 
 /*set style for the level one menu only*/
-.level_one_menu>li>a{
-  font-weight:400;
+
+.level_one_menu>li>a {
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 /*set padding for level two menu*/
-.level_two_menu>li{
+
+.level_two_menu>li {
   padding-left: 24px;
 }
 
 /*hide the level one menu in default*/
-.navigation{
+
+.navigation {
   display: none;
 }
 
 /*hide the level two menu in default*/
-.level_two_menu{
+
+.level_two_menu {
   display: none;
   background-color: black;
 }
 
 /*show the menu when click on it*/
-.show{
+
+.show {
   display: block;
 }
 
-
-@media only screen and (min-width:900px){
-  .nav_container{
+@media only screen and (min-width:900px) {
+  .nav_container {
     max-width: 1200px;
   }
-
   /*hide the mobile menu bar in desktop version*/
-  .nav_bar{
+  .nav_bar {
     display: none;
   }
-
   /*show level_one dropdown menu in default*/
-  .navigation{
-    display:block;
-  }
-
-  .primary_menu{
-    width:100%;
-    padding:5px 20px 0 20px;
-  }
-
-/*change the flex direction*/
-  .level_one_menu{
-    flex-direction: row;
-    justify-content:center;
-  }
-
-/*clear the menu padding*/
-  .level_one_menu a{
-    padding:0 25px 0 25px;
-  }
-
-/*hover on primary_menu to see drop down menu*/
-  .level_one_menu>li:hover .level_two_menu{
+  .navigation {
     display: block;
   }
-
-/*clear the level two menu padding*/
-  .level_two_menu>li{
-    padding:0;
+  .primary_menu {
+    width: 100%;
+    padding: 5px 20px 0 20px;
   }
-
+  /*change the flex direction*/
+  .level_one_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  /*clear the menu padding*/
+  .level_one_menu a {
+    padding: 0 25px 0 25px;
+  }
+  /*hover on primary_menu to see drop down menu*/
+  .level_one_menu>li:hover .level_two_menu {
+    display: block;
+  }
+  /*clear the level two menu padding*/
+  .level_two_menu>li {
+    padding: 0;
+  }
 }
