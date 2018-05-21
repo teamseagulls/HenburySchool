@@ -1,0 +1,146 @@
+@media only screen and (min-width:1200px) {
+  main {
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  }
+  h1 {}
+  h2 {}
+  h3 {}
+  p {}
+  section {}
+  aside {}
+  footer {}
+}
+
+@media only screen and (min-width:1024px) {
+  main {
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  main {
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  main {
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:320px) {
+  body {
+    background-image: url(../images/img14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    box-sizing: content-box;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 5px;
+  }
+  h2 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  h3 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+  section {
+    margin: 8px;
+    border-radius: 4px;
+    background: #FFC375;
+  }
+  aside {}
+  footer p {
+    font-size: 6px;
+    background: black;
+    opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  body {
+    color: black;
+    background-image: url(../images/img12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    margin-top: 10px;
+    padding: 20px;
+    width: 280px;
+  }
+  section {
+    color: white;
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #5AB266;
+    opacity: .6;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
+  aside {
+    color: white;
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #279AF1;
+    opacity: .6;
+  }
+  p {
+    font-size: 11px;
+    padding: inherit;
+    line-height: 22px;
+  }
+  footer {
+    padding-left: 5px;
+    color: white;
+    font-size: 10px;
+    background-color: black;
+  }
+  #calendar {
+    border: 1px;
+    width: 275px;
+    height: 450px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+}
