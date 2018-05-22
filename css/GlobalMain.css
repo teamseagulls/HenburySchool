@@ -43,7 +43,7 @@
 
 @media only screen and (min-width:320px) {
   body {
-    background-image: url(../images/img14.jpg);
+    background-image: url(../images/img26.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -56,7 +56,7 @@
   }
   h1 {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 6px;
   }
   h2 {
     padding-top: 5px;
@@ -82,21 +82,28 @@
   footer p {
     font-size: 6px;
     background: black;
-    opacity: 0.4;
+    opacity: 0.9;
   }
 }
 
 @media only screen and (max-width:320px) {
   body {
     color: black;
-    background-image: url(../images/img12.jpg);
+    background-image: url(../images/img25.jpg );
     background-repeat: no-repeat;
     background-size: cover;
   }
   main {
     margin-top: 10px;
-    padding: 20px;
-    width: 280px;
+    padding: 10px;
+    width: 300px;
+  }
+  article {
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #3AE0A0;
+    opacity: 0.8
   }
   section {
     color: white;
@@ -104,7 +111,11 @@
     margin-bottom: 8px;
     border-radius: 4px;
     background-color: #5AB266;
-    opacity: .6;
+    opacity: .8;
+  }
+  .picture {
+    width: 255px;
+    height: 200px;
   }
   .filebox {
     box-sizing: border-box;
@@ -123,7 +134,7 @@
     margin-bottom: 8px;
     border-radius: 4px;
     background-color: #279AF1;
-    opacity: .6;
+    opacity: .5;
   }
   p {
     font-size: 11px;

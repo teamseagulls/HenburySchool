@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="css/school.css">
   <link rel="stylesheet" href="css/requestform.css">
+  <link rel="stylesheet" href="css/GlobalMain.css">
   <title>Henbury School website </title>
 </head>
 
@@ -57,12 +58,11 @@
             </ul>
           </li>
 
-          <li> <a href="#" class="primary_menu">Programs</a></li>
+          <li> <a href="programs.html" class="primary_menu">Programs</a></li>
 
           <li> <a href="#" class="primary_menu dropdown">Contact</a>
             <ul class="level_two_menu">
               <li> <a href="absence.html">Absence </a> </li>
-              <li> <a href="enquery.html">Enquary </a> </li>
               <li> <a href="faq.html">FAQ </a> </li>
             </ul>
           </li>
@@ -75,8 +75,8 @@
 
   <div class="mainbody">
     <main>
+      <h1>We Care about your Needs</h1>
       <section class="requestform">
-        <h2>We Care about your Needs</h2>
         <p> Your aplication will be reviewed by our Adminstration Office and will be Forward to Selected Staff Members.</p>
         <div class="tab">
           <button class="options" onclick="openStaff(event, 'Adminstration')">Adminstration</button>
@@ -84,231 +84,227 @@
           <button class="options" onclick="openStaff(event, 'OSHC')">OSHC staff</button>
         </div>
         <div id="Adminstration" class="desc">
-          <h3>Adminstration</h3>
+          <h2>Adminstration</h2>
           <p>Request a meeting with Adminstration office Members:</p>
-          <form class="booking" action="self" method="post">
-            <fieldset>
-              <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-              <div>
-                <label>Please select a catagory. <br> I'm a:
-                  <select name="catagory" multiple required>
-                   <option value="null" selected>Choose One</option>
-                    <option value="guardian">Guardian</option>
-                    <option value="stuff">Stuff</option>
-                    <option value="student">Student</option>
+          <fieldset>
+            <form action="index.html" method="post">
+              <h4> Please fill up this following form with appropriate information and hit submit.</h4><br>
+
+              <label>Please select a catagory. <br> I'm a:
+                  <select  name="options">
+                    <option >Choose One</option>
+                    <option >Guardian</option>
+                    <option >Stuff</option>
+                    <option >Student</option>
                   </select>
                 </label>
-              </div><br>
-              <div>
-                <label>Student Grade: </label>
-                <select name="catagoty" multiple required>
-                    <option value="null"  selected>Choose One</option>
-                    <option value="G1" >Grade 1</option>
-                    <option value="G2">Grade 2</option>
-                    <option value="G3">Grade 3</option>
-                    <option value="G4">Grade 4</option>
-                    <option value="G5">Grade 5</option>
-                    <option value="G6">Grade 6</option>
-                    <option value="G7">Grade 7</option>
-                    <option value="G8">Grade 8</option>
-                    <option value="G9">Grade 9</option>
-                    <option value="G10">Grade 10</option>
+
+              <label>Student Grade: </label>
+              <select>
+                    <option>Blue 1</option>
+                    <option>Blue 2</option>
+                    <option>Blue 3</option>
+                    <option>Blue 4</option>
+                    <option>CSC 1  </option>
+                    <option>CSC 2  </option>
+                    <option>CSC 3  </option>
+                    <option>DMS </option>
+                    <option>DHS  </option>
+                    <option>Green 1</option>
+                    <option>Green 3</option>
+                    <option>Green 4</option>
+                    <option>NMS  </option>
+                    <option>Purple 1</option>
+                    <option>Purple 2</option>
+                    <option>Purple 3</option>
+                    <option>Purple 4</option>
+                    <option> SMS </option>
+                    <option>Yellow 1</option>
+                    <option>Yellow 2</option>
+                    <option>Yellow 3</option>
+                    <option>Yellow 4</option>
                 </select> <br>
-                <label>Student ID: </label>
-                <input type="text" required>
-              </div><br>
-              <div>
-                <label>Select available Members: </label>
-                <select name="members" multiple required>
-                  <option value="null" selected>Choose one</option>
-                  <option value="t1">Jhon Stocks</option>
-                  <option value="t2">Apple Gum</option>
-                  <option value="t3">Chanya Krishman</option>
-                  <option value="t4">Michel Phillips</option>
-                </select>
-              </div>
-              <div class="name">
-                <label>Your Name: </label>
-                <input type="text" required>
-              </div>
-              <div class="address">
-                <label>Street Name: </label>
-                <input type="text"> <br>
-                <label>Suburb: </label>
-                <input type="text"><br>
-                <label>State: </label>
-                <input type="text"> <br>
-                <label>Zip Code: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="email">
-                <label>Email Address: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="phone">
-                <label>Phone Number: </label>
-                <input type="tel" required> <br>
-              </div><br>
-              <div class="others">
-                <label>Please tell us a brief about the issue:-</label><br>
-                <textarea name="others" rows="5" cols="25"></textarea>
-              </div>
+              <label>Student ID: </label>
+              <input type="number" required>
+
+
+              <label>Select available Members: </label>
+              <input type="text" name="teachers name">
+
+
+              <label>Your Name: </label>
+              <input type="text" required>
+
+              <label>Street Name: </label>
+              <input type="text"> <br>
+              <label>Suburb: </label>
+              <input type="text"><br>
+              <label>State: </label>
+              <input type="text"> <br>
+              <label>Zip Code: </label>
+              <input type="text"> <br>
+
+              <label>Email Address: </label>
+              <input type="text"> <br>
+
+              <label>Phone Number: </label>
+              <input type="tel" required> <br>
+
+              <label>Please tell us a brief about the issue:-</label><br>
+              <textarea name="others" rows="5" cols="25"></textarea> <br>
+
 
               <button type="submit" name="submit">Submit Form</button>
-              <br><br><br><br><br>
-            </fieldset>
-          </form>
+              <br><br>
+            </form>
+          </fieldset>
         </div>
         <div id="Teacher" class="desc">
           <h3>Teacher</h3>
           <p>To get in touch with our teachers please fill up the form:</p>
-          <form class="booking" action="self" method="post">
-            <fieldset>
+          <fieldset>
+            <form action="index.html" method="post">
               <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-              <div>
-                <label>Please select a catagory. <br> I'm a:
-                              <select name="catagoty" multiple required>
-                                <option value="guardian" selected>Guardian</option>
+
+              <label>Please select a catagory. <br> I'm a:
+                              <select name="catagoty" >
+                                <option value="guardian" >Guardian</option>
                                 <option value="stuff">Stuff</option>
                                 <option value="student">Student</option>
                               </select>
                             </label>
-              </div><br>
-              <div>
-                <label>Student Grade: </label>
-                <select name="catagoty" multiple required>
-                  <option value="G1" selected>Grade 1</option>
-                  <option value="G2">Grade 2</option>
-                  <option value="G3">Grade 3</option>
-                  <option value="G4">Grade 4</option>
-                  <option value="G5">Grade 5</option>
-                  <option value="G6">Grade 6</option>
-                  <option value="G7">Grade 7</option>
-                  <option value="G8">Grade 8</option>
-                  <option value="G9">Grade 9</option>
-                  <option value="G10">Grade 10</option>
+
+              <label>Student Grade: </label>
+              <select>
+                    <option>Blue 1</option>
+                    <option>Blue 2</option>
+                    <option>Blue 3</option>
+                    <option>Blue 4</option>
+                    <option>CSC 1  </option>
+                    <option>CSC 2  </option>
+                    <option>CSC 3  </option>
+                    <option>DMS </option>
+                    <option>DHS  </option>
+                    <option>Green 1</option>
+                    <option>Green 3</option>
+                    <option>Green 4</option>
+                    <option>NMS  </option>
+                    <option>Purple 1</option>
+                    <option>Purple 2</option>
+                    <option>Purple 3</option>
+                    <option>Purple 4</option>
+                    <option> SMS </option>
+                    <option>Yellow 1</option>
+                    <option>Yellow 2</option>
+                    <option>Yellow 3</option>
+                    <option>Yellow 4</option>
                 </select> <br>
-                <label>Student ID: </label>
-                <input type="studentID" name="Student ID" required>
-              </div><br>
-              <div>
-                <label>Select available teacher: </label>
-                <select name="teachers" multiple required>
-                  <option value="t1" selected>Jhon Stocks</option>
-                  <option value="t2">Apple Gum</option>
-                  <option value="t3">Chanya Krishman</option>
-                  <option value="t4">Michel Phillips</option>
-                </select>
-              </div>
-              <div class="name">
-                <label>Your Name: </label>
-                <input type="text" required>
-              </div>
-              <div class="address">
-                <label>Street Name: </label>
-                <input type="text"> <br>
-                <label>Suburb: </label>
-                <input type="text"><br>
-                <label>State: </label>
-                <input type="text"> <br>
-                <label>Zip Code: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="email">
-                <label>Email Address: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="phone">
-                <label>Phone Number: </label>
-                <input type="tel" required> <br>
-              </div><br>
-              <div class="others">
-                <label>Please tell us a brief about the issue:-</label><br>
-                <textarea name="others" rows="5" cols="25"></textarea>
-              </div>
+              <label>Student ID: </label>
+              <input type="number" required>
+              <label>Select available teacher:<input type="text" name="teachers" > </label>
+
+
+              <label>Your Name: </label>
+              <input type="text" required>
+
+              <label>Street Name: </label>
+              <input type="text"> <br>
+              <label>Suburb: </label>
+              <input type="text"><br>
+              <label>State: </label>
+              <input type="text"> <br>
+              <label>Zip Code: </label>
+              <input type="text"> <br>
+
+              <label>Email Address: </label>
+              <input type="text"> <br>
+
+              <label>Phone Number: </label>
+              <input type="tel" required> <br>
+
+              <label>Please tell us a brief about the issue:-</label><br>
+              <textarea name="others" rows="5" cols="25"></textarea> <br>
+
 
               <button type="submit" name="submit">Submit Form</button>
-              <br><br><br><br><br>
-            </fieldset>
-          </form>
+              <br><br>
+            </form>
+          </fieldset>
         </div>
         <div id="OSHC" class="desc">
           <h3>OSHC (After School Care Staff)</h3>
           <p>Requestig a meeting with OSHC staff has never been so easy:</p>
-          <form class="booking" action="self" method="post">
-            <fieldset>
-              <h4> Please fill this following form with appropriate information and hit submit.</h4><br>
-              <div>
-                <label>Please select a catagory. <br> I'm a:
-                  <select name="catagoty" id="regOption" multiple required>
-                    <option value="guardian" selected>Guardian</option>
-                    <option value="stuff">Stuff</option>
-                    <option value="student">Student</option>
+          <fieldset>
+            <form action="index.html" method="post">
+              <p> Please fill this following form with appropriate information and hit submit.</p><br>
+              <label>Please select a catagory. <br> I'm a:
+                  <select name="catagoty" id="regOption">
+                    <option  >Guardian</option>
+                    <option >Stuff</option>
+                    <option >Student</option>
                   </select>
                 </label>
-              </div><br>
-              <div>
-                <label>Student Grade: </label>
-                <select name="catagoty" multiple>
-                    <option value="G1" selected>Grade 1</option>
-                    <option value="G2">Grade 2</option>
-                    <option value="G3">Grade 3</option>
-                    <option value="G4">Grade 4</option>
-                    <option value="G5">Grade 5</option>
-                    <option value="G6">Grade 6</option>
-                    <option value="G7">Grade 7</option>
-                    <option value="G8">Grade 8</option>
-                    <option value="G9">Grade 9</option>
-                    <option value="G10">Grade 10</option>
+
+              <label>Student Grade: </label>
+              <select>
+                    <option>Blue 1</option>
+                    <option>Blue 2</option>
+                    <option>Blue 3</option>
+                    <option>Blue 4</option>
+                    <option>CSC 1  </option>
+                    <option>CSC 2  </option>
+                    <option>CSC 3  </option>
+                    <option>DMS </option>
+                    <option>DHS  </option>
+                    <option>Green 1</option>
+                    <option>Green 3</option>
+                    <option>Green 4</option>
+                    <option>NMS  </option>
+                    <option>Purple 1</option>
+                    <option>Purple 2</option>
+                    <option>Purple 3</option>
+                    <option>Purple 4</option>
+                    <option> SMS </option>
+                    <option>Yellow 1</option>
+                    <option>Yellow 2</option>
+                    <option>Yellow 3</option>
+                    <option>Yellow 4</option>
                 </select> <br>
-                <label>Student ID: </label>
-                <input type="studentID" name="Student ID">
-              </div><br>
-              <div>
-                <label>Select form available Staffs: </label>
-                <select name="teachers" multiple required>
-                  <option value="t1" selected>Jhon Stocks</option>
-                  <option value="t2">Apple Gum</option>
-                  <option value="t3">Chanya Krishman</option>
-                  <option value="t4">Michel Phillips</option>
-                </select>
-              </div>
-              <div class="name">
-                <label>Your Name: </label>
-                <input type="text" required>
-              </div>
-              <div class="address" id="address">
-                <label>Street Name: </label>
-                <input type="text"> <br>
-                <label>Suburb: </label>
-                <input type="text"><br>
-                <label>State: </label>
-                <input type="text"> <br>
-                <label>Zip Code: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="email">
-                <label>Email Address: </label>
-                <input type="text"> <br>
-              </div>
-              <div class="phone">
-                <label>Phone Number: </label>
-                <input type="tel" required> <br>
-              </div><br>
-              <div class="others">
-                <label>Please tell us a way to help you:-</label><br>
-                <textarea name="others" rows="5" cols="25"></textarea>
-              </div>
+              <label>Student ID: </label>
+              <input type="number" required>
+              <label>PLesae Enter the Staff's name: <input type="text" name="teachers"></label>
+
+              <label>Your Name: </label>
+              <input type="text" required>
+
+              <label>Street Name: </label>
+              <input type="text"> <br>
+              <label>Suburb: </label>
+              <input type="text"><br>
+              <label>State: </label>
+              <input type="text"> <br>
+              <label>Zip Code: </label>
+              <input type="text"> <br>
+
+              <label>Email Address: </label>
+              <input type="text"> <br>
+
+              <label>Phone Number: </label>
+              <input type="tel" required> <br>
+
+              <label>Please tell us a way to help you:-</label><br>
+              <textarea name="others" rows="5" cols="25"></textarea> <br>
+
 
               <button type="submit" name="submit">Submit Form</button>
-              <br><br><br><br><br>
-            </fieldset>
-          </form>
+              <br><br>
+            </form>
+          </fieldset>
         </div>
       </section>
     </main>
     <footer>
-
+      &copy;Team: Seagull, Members: Md Ashraful Islam, A J M Hossain Siddiquei Ruadh, Huimin Huang. Charles Darwin University.
     </footer>
   </div>
 

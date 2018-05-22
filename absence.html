@@ -5,135 +5,106 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="css/school.css">
-  <link rel="stylesheet" href="css/absence.css">
   <link rel="stylesheet" href="css/requestform.css">
+  <link rel="stylesheet" href="css/GlobalMain.css">
   <title>Henbury School website </title>
 </head>
 
 <body>
   <!--start navigation-->
-      <header>
-        <div class="nav_container">
+  <header>
+    <div class="nav_container">
 
-          <div class="nav_bar">
-            <div class="nav_logo">
-              <a href="index.html">Henbury School</a>
-            </div>
-            <div class="nav_burger">
-              <div class="burger"></div>
-            </div>
-          </div>
-
-          <nav class="navigation">
-            <ul class="level_one_menu">
-              <li> <a href="#" class="primary_menu dropdown">About</a>
-                <ul class="level_two_menu">
-                  <li>  <a href="outreachclass.html">Outreach Class</a> </li>
-                  <li>  <a href="annualreport.html">Anual Report</a> </li>
-                  <li>  <a href="council.html">Council</a> </li>
-                  <li>  <a href="employment.html">Employment</a> </li>
-                </ul>
-              </li>
-
-              <li> <a href="#" class="primary_menu dropdown">Fundraising</a>
-                <ul class="level_two_menu">
-                  <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
-                  <li> <a href="otherhelp.html">Other Help </a> </li>
-                </ul>
-              </li>
-
-              <li> <a href="#" class="primary_menu dropdown">News & Events</a>
-                <ul class="level_two_menu">
-                  <li> <a href="news.html">News </a> </li>
-                  <li> <a href="calendar.html">Calendar </a> </li>
-                </ul>
-              </li>
-
-              <li> <a href="#" class="primary_menu dropdown">Parents Portal</a>
-                <ul class="level_two_menu">
-                  <li> <a href="teachingteam.html">Teaching Team </a> </li>
-                  <li> <a href="afterschoolcare.html">After School Care</a> </li>
-                  <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
-                </ul>
-              </li>
-
-              <li> <a href="#" class="primary_menu">Programs</a></li>
-
-              <li> <a href="#" class="primary_menu dropdown">Contact</a>
-                <ul class="level_two_menu">
-                  <li> <a href="absence.html">Absence </a> </li>
-                  <li> <a href="enquery.html">Enquary </a> </li>
-                  <li> <a href="faq.html">FAQ </a> </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-
+      <div class="nav_bar">
+        <div class="nav_logo">
+          <a href="index.html">Henbury School</a>
         </div>
-      </header>
+        <div class="nav_burger">
+          <div class="burger"></div>
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <ul class="level_one_menu">
+          <li> <a href="#" class="primary_menu dropdown">About</a>
+            <ul class="level_two_menu">
+              <li> <a href="outreachclass.html">Outreach Class</a> </li>
+              <li> <a href="annualreport.html">Anual Report</a> </li>
+              <li> <a href="council.html">Council</a> </li>
+              <li> <a href="employment.html">Employment</a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="#" class="primary_menu dropdown">Fundraising</a>
+            <ul class="level_two_menu">
+              <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+              <li> <a href="otherhelp.html">Other Help </a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="#" class="primary_menu dropdown">News & Events</a>
+            <ul class="level_two_menu">
+              <li> <a href="news.html">News </a> </li>
+              <li> <a href="calendar.html">Calendar </a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="#" class="primary_menu dropdown">Parents Portal</a>
+            <ul class="level_two_menu">
+              <li> <a href="teachingteam.html">Teaching Team </a> </li>
+              <li> <a href="afterschoolcare.html">After School Care</a> </li>
+              <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="programs.html" class="primary_menu">Programs</a></li>
+
+          <li> <a href="#" class="primary_menu dropdown">Contact</a>
+            <ul class="level_two_menu">
+              <li> <a href="absence.html">Absence </a> </li>
+
+              <li> <a href="faq.html">FAQ </a> </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
   <!--end navigation-->
 
   <main>
-    <section class="absence">
-      <div class="">
-        <h2> Absence Report form  </h2>
-        <div class="">
-          <fieldset>
-            <div class="regOption">
-              <label>Please select a catagory</label>
-              <select name="catagoty" id="regOption">
-                              <option value="student">Student</option>
-                              <option value="Guardian">Guardian</option>
-                          </select>
-            </div><br>
-            <div class="name">
-              <label>Name</label>
-              <input type="text" required>
-            </div>
-            <div class="">
-              <label>Student ID: </label>
-              <input type="text" required>
-            </div>
-            <div class="address" id="address">
-              <label>Address</label>
-              <input type="text"> <br>
-            </div>
-            <div class="others">
-              <label>Reasons For Absence: </label><br>
-              <textarea name="others" rows="5" cols="25"></textarea>
-            </div>
-            <div class="">
-              <label>Date from</label>
-              <input type="date">
-              <label>Date to </label>
-              <input type="date">
-
-            </div>
-            <div class="email">
-              <label>Email Address</label>
-              <input type="text"> <br>
-            </div>
-            <div class="phone">
-              <label>Parent/Guardian's Number</label>
-              <input type="tel"> <br>
-            </div>
-            <button type="submit">Submit Form</button>
-          </fieldset>
-
-        </div>
-
-      </div>
-    </section>
+    <article class="absence">
+      <h2> Absence Report form  </h2>
+      <form action="index.html" method="post">
+        <fieldset>
+          <div class="regOption">
+            <label for="regOption">Please select a catagory. <br>I'm a:
+               <select name="catagoty" id="regOption">
+                 <option value="student">Student</option>
+                 <option value="guardian" >Guardian</option>
+               </select>
+            </label>
+          </div>
+          <label>Name<input type="text" required="NAME"></label>
+          <label>Student ID:<input type="text" required="STUDENT ID"> </label>
+          <label>Address:<input type="text"></label> <br>
+          <label>Reasons For Absence: <br>  <textarea name="others" rows="5" cols="25"></textarea></label>
+          <label>Date from:<input type="date"></label>
+          <label>Date to:<input type="date"></label>
+          <label>Email Address:<input type="text"></label> <br>
+          <label>Parent/Guardian's Number:<input type="tel"></label> <br>
+          <button type="submit">Submit Form</button>
+        </fieldset>
+      </form>
+    </article>
 
 
 
   </main>
   <footer>
-    Henbury School Darwin.
-
+    &copy;Team: Seagull, Members: Md Ashraful Islam, A J M Hossain Siddiquei Ruadh, Huimin Huang. Charles Darwin University.
   </footer>
-  </div>
-
   <script src="js/school.js"></script>
 </body>
 
