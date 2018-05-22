@@ -118,6 +118,29 @@ input:active {
   max-width: 10em;
 }
 
+@media only screen and (mix-width:340px) {
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  input[type="text"], input[type="email"] {
+    margin: 5px;
+    width: 90%;
+  }
+}
+
+/* for devices larger than  Nokia Lumia (710, 800),Apple iPhone 5 (5c, 5s),Apple iPhone 4 (4, 4S)
+HTC Desire,HTC Desire HD,Motorola Droid,Samsung Galaxy S,Samsung Galaxy S Plus,Samsung Nexus S
+Nokia Lumia 620,Nokia Lumia 720
+
+width 320 - 340
+
+*/
+
 @media only screen and (max-width:320px) {
   .tab button {
     text-align: justify;
