@@ -1,37 +1,176 @@
-/* for devices  Nokia Lumia (710, 800),Apple iPhone 5 (5c, 5s),Apple iPhone 4 (4, 4S)
-HTC Desire,HTC Desire HD,Motorola Droid,Samsung Galaxy S,Samsung Galaxy S Plus,Samsung Nexus S
-Nokia Lumia 620,Nokia Lumia 720 */
+body, header {
+  width: auto;
+  height: auto;
+  color: black;
+}
 
-@media only screen and (min-width:1200px) {
+main {
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  box-sizing: content-box;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 6px;
+}
+
+h2 {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+h3 {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+p {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+}
+
+section {
+  color: white;
+  padding: 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #5AB266;
+  opacity: .8;
+}
+
+aside {
+  padding: 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #3AE0A0;
+  opacity: 0.8;
+}
+
+.picture {
+  width: 40%;
+  height: 300px;
+}
+
+.filebox {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.file {
+  display: inline-block;
+  padding: 5px;
+  margin: 12px;
+  background-color: #A89B9D;
+  width: 100px;
+  height: 100px;
+}
+
+input {
+  width: 40%;
+}
+
+footer p {
+  font-size: 6px;
+  background: black;
+  opacity: 0.9;
+}
+
+iframe {
+  margin: 40px;
+  width: 600px;
+  height: 650px;
+}
+
+/* ok  */
+
+@media only screen and (max-width:1024px) {
   main {
     margin-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
     width: 80%;
+    box-sizing: content-box;
   }
-  h1 {}
-  h2 {}
-  h3 {}
-  p {}
-  section {}
-  aside {}
-  footer {}
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 6px;
+  }
+  h2 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  h3 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+  section {
+    color: white;
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #5AB266;
+    opacity: .8;
+  }
+  aside {
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #3AE0A0;
+    opacity: 0.8;
+  }
+  .picture {
+    width: 95%;
+    height: 300px;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    padding: 5px;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
+  footer p {
+    font-size: 6px;
+    background: black;
+    opacity: 0.9;
+  }
+  iframe {
+    margin: 40px;
+    width: 600px;
+    height: 650px;
+  }
 }
 
-@media only screen and (min-width:1024px) {
-  main {
-    margin-top: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
-  }
-}
+/* ok  */
 
-@media only screen and (min-width:768px) {
-  body {
-    background-image: url(images/img23.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@media only screen and (max-width:860px) {
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
   }
   main {
     margin-top: 10px;
@@ -74,34 +213,124 @@ Nokia Lumia 620,Nokia Lumia 720 */
     background-color: #3AE0A0;
     opacity: 0.8;
   }
+  .picture {
+    width: 95%;
+    height: 300px;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    padding: 5px;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
   footer p {
     font-size: 6px;
     background: black;
     opacity: 0.9;
   }
+  iframe {
+    margin: 30px;
+    width: 500px;
+    height: 550px;
+  }
 }
 
-@media query {}
+/* ok  */
 
-@media query {}
+@media only screen and (max-width:768px) {
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
+  }
+  main {
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    box-sizing: content-box;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 6px;
+  }
+  h2 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  h3 {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+  section {
+    color: white;
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #5AB266;
+    opacity: .8;
+  }
+  aside {
+    padding: 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #3AE0A0;
+    opacity: 0.8;
+  }
+  .picture {
+    width: 95%;
+    height: 300px;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    padding: 5px;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
+  footer p {
+    font-size: 6px;
+    background: black;
+    opacity: 0.9;
+  }
+  iframe {
+    margin: 30px;
+    width: 500px;
+    height: 550px;
+  }
+}
 
-/* end 650  *----*  start 651 - 700 */
+/* ok  */
 
-@media only screen and (min-width:650) {}
-
-/* end 440  *----*  start 441 - 650 */
-
-@media only screen and (min-width:440) {}
-
-/* end  400 *---*  start 401 - 440 */
-
-@media only screen and (min-width:400) {
-  body {}
+@media only screen and (max-width:650px) {
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
+  }
   main {
     box-sizing: content-box;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
   }
   h1 {
     text-align: center;
@@ -112,8 +341,12 @@ Nokia Lumia 620,Nokia Lumia 720 */
     padding-left: 10px;
   }
   h3 {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    background-color: #01BAEF;
+    color: #D0F2FC;
+  }
+  strong {
+    color: #01BAEF;
   }
   p {
     font-size: 16px;
@@ -144,6 +377,22 @@ Nokia Lumia 620,Nokia Lumia 720 */
     background-color: #3AE0A0;
     opacity: 0.8;
   }
+  .picture {
+    width: 95%;
+    height: 300px;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    padding: 5px;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
   footer p {
     padding-left: 5px;
     color: white;
@@ -151,17 +400,20 @@ Nokia Lumia 620,Nokia Lumia 720 */
     background-color: black;
   }
   iframe {
-    margin-left: 8px;
-    padding-left: 5px;
+    margin: 20px;
     width: 350px;
     height: 450px;
   }
 }
 
-/* start 361 - 400   ok  */
+/*  */
 
-@media only screen and (min-width:360px) {
-  body {}
+@media only screen and (max-width:440px) {
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
+  }
   main {
     box-sizing: content-box;
     padding-left: 10%;
@@ -177,8 +429,12 @@ Nokia Lumia 620,Nokia Lumia 720 */
     padding-left: 10px;
   }
   h3 {
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    background-color: #01BAEF;
+    color: #D0F2FC;
+  }
+  strong {
+    color: #01BAEF;
   }
   p {
     font-size: 16px;
@@ -209,6 +465,22 @@ Nokia Lumia 620,Nokia Lumia 720 */
     background-color: #3AE0A0;
     opacity: 0.8;
   }
+  .picture {
+    width: 95%;
+    height: 300px;
+  }
+  .filebox {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .file {
+    display: inline-block;
+    padding: 5px;
+    margin: 12px;
+    background-color: #A89B9D;
+    width: 100px;
+    height: 100px;
+  }
   footer p {
     padding-left: 5px;
     color: white;
@@ -216,17 +488,19 @@ Nokia Lumia 620,Nokia Lumia 720 */
     background-color: black;
   }
   iframe {
-    margin-left: 8px;
-    padding-left: 5px;
     width: 350px;
     height: 450px;
   }
 }
 
-/*  341-360   ok   */
+/*     ok  */
 
-@media only screen and (min-width:340px) {
-  body {}
+@media only screen and (max-width:360px) {
+  body, header {
+    width: auto;
+    height: auto;
+    color: black;
+  }
   main {
     box-sizing: content-box;
     margin-top: 10px;
@@ -259,11 +533,12 @@ Nokia Lumia 620,Nokia Lumia 720 */
     padding: 4px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: #3AE0A0;
+    background-color: #19323C;
     opacity: .8;
   }
   article {
-    background-color: #F97557;
+    background-color: #34344A;
+    color: white;
     opacity: .8;
     border-radius: 4px;
     margin-top: 5px;
@@ -273,11 +548,14 @@ Nokia Lumia 620,Nokia Lumia 720 */
     padding: 4px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: #3AE0A0;
+    background-color: #5C635F;
     opacity: 0.8;
   }
+  a {
+    color: #D6FFF6;
+  }
   .picture {
-    width: 300px;
+    width: 90%;
     height: 250px;
   }
   .filebox {
@@ -304,10 +582,12 @@ Nokia Lumia 620,Nokia Lumia 720 */
   }
 }
 
-/*  321 - 400   ok     */
+/*     ok     */
 
-@media only screen and (min-width:320px) {
-  body {
+@media only screen and (max-width:340px) {
+  body, header {
+    width: auto;
+    height: auto;
     color: black;
   }
   main {
@@ -378,10 +658,12 @@ Nokia Lumia 620,Nokia Lumia 720 */
   }
 }
 
-/* end 320    ok     */
+/*    ok     */
 
 @media only screen and (max-width:320px) {
-  body {
+  body, header {
+    width: auto;
+    height: auto;
     color: black;
   }
   main {
@@ -445,25 +727,8 @@ Nokia Lumia 620,Nokia Lumia 720 */
     padding: 10px;
     scroll-behavior: smooth;
   }
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
 }
-
-/* for devices larger than  Nokia Lumia (710, 800),Apple iPhone 5 (5c, 5s),Apple iPhone 4 (4, 4S)
-HTC Desire,HTC Desire HD,Motorola Droid,Samsung Galaxy S,Samsung Galaxy S Plus,Samsung Nexus S
-Nokia Lumia 620,Nokia Lumia 720
-width 320 - 340
-*/
-
-/* for devices   HTC One,Sony Xperia Z,Motorola Droid 3 & 4,Samsung Galaxy Nexus,Samsung Galaxy Note II
-viewport: 360  */
-
-/* end 700  *----*  start 701 - 750*/
-
-/* end 750  *----*  start 751- 786*/
-
-/* end 786  *----*  start 787- 900*/
-
-/* end 900  *----*   start 901- 1024*/
-
-/* end 1024  *----*    start 1025- 1280*/
-
-/* start 1281- 1366*/

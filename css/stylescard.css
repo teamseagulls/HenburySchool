@@ -254,30 +254,29 @@ label span {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer ul {
   list-style: none;
   display: block;
   float: left;
 }
+
 footer h3 {
   font-weight: 100;
   margin-bottom: 0;
 }
-.pink{color: pink;}
-.red{color: red;}
-.orange{color: orange;}
-.green{color: green;}
+
+.pink {
+  color: pink;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.green {
+  color: green;
+}
