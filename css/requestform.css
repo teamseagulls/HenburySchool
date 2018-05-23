@@ -8,13 +8,6 @@ fieldset {
   flex-direction: row;
 }
 
-label {
-  display: block;
-  margin: auto;
-}
-
-input[type="text"], input[type="email"] {}
-
 input:focus {
   background-color: #F4F5F3;
 }
@@ -23,7 +16,7 @@ input:active {
   background-color: #F4F5F3;
 }
 
-option, select, button {
+option, select, button, input {
   background: white;
 }
 
@@ -53,7 +46,7 @@ fieldset {
 }
 
 .tab button:hover {
-  background-color: #A3CEF1;
+  background-color: #F97557;
 }
 
 .tab button.active {
@@ -101,9 +94,9 @@ div {
   padding-bottom: 5px;
 }
 
-label {
+label, input {
   display: block;
-  margin: auto;
+  margin: 4px;
 }
 
 input:focus {
@@ -128,7 +121,6 @@ input:active {
     font-size: 12px;
   }
   input[type="text"], input[type="email"] {
-    margin: 5px;
     width: 90%;
   }
 }
@@ -152,7 +144,6 @@ width 320 - 340
     font-size: 12px;
   }
   input[type="text"], input[type="email"] {
-    margin: 5px;
     width: 90%;
   }
 }
