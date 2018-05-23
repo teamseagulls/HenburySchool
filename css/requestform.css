@@ -1,6 +1,11 @@
+h2 {
+  text-align: center;
+}
+
 fieldset {
   text-align: left;
   box-sizing: border-box;
+  padding: 5px;
 }
 
 .option {
@@ -16,14 +21,12 @@ input:active {
   background-color: #F4F5F3;
 }
 
-option, select, button, input {
-  background: white;
+input {
+  width: 30%;
 }
 
-fieldset {
-  text-align: left;
-  box-sizing: border-box;
-  padding: 5px;
+option, select, button, input {
+  background: white;
 }
 
 .requestform {
@@ -82,10 +85,6 @@ fieldset>div {
   }
 }
 
-h2 {
-  text-align: center;
-}
-
 p {
   padding: 8px;
 }
@@ -99,19 +98,11 @@ label, input {
   margin: 4px;
 }
 
-input:focus {
-  background-color: #F4F5F3;
-}
-
-input:active {
-  background-color: #F4F5F3;
-}
-
 #zip {
   max-width: 10em;
 }
 
-@media only screen and (mix-width:340px) {
+@media only screen and (max-width:1024) {
   .tab button {
     border: none;
     outline: none;
@@ -120,18 +111,72 @@ input:active {
     transition: 0.3s;
     font-size: 12px;
   }
-  input[type="text"], input[type="email"] {
-    width: 90%;
+  input {
+    width: 30%;
   }
 }
 
-/* for devices larger than  Nokia Lumia (710, 800),Apple iPhone 5 (5c, 5s),Apple iPhone 4 (4, 4S)
-HTC Desire,HTC Desire HD,Motorola Droid,Samsung Galaxy S,Samsung Galaxy S Plus,Samsung Nexus S
-Nokia Lumia 620,Nokia Lumia 720
+@media only screen and (max-width:860px) {
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  input {
+    width: 40%;
+  }
+}
 
-width 320 - 340
+@media only screen and (max-width:770px) {
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  input {
+    width: 40%;
+  }
+}
 
-*/
+@media only screen and (max-width:600px) {
+  input {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  input {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:340px) {
+  .tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  input {
+    width: 80%;
+  }
+}
 
 @media only screen and (max-width:320px) {
   .tab button {
