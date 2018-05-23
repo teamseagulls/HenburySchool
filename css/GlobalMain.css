@@ -44,6 +44,14 @@ section {
   opacity: .8;
 }
 
+article {
+  background-color: #F97557;
+  opacity: .8;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 aside {
   padding: 4px;
   margin-bottom: 8px;
@@ -129,6 +137,13 @@ iframe {
     background-color: #5AB266;
     opacity: .8;
   }
+  article {
+    background-color: #F97557;
+    opacity: .8;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   aside {
     padding: 4px;
     margin-bottom: 8px;
@@ -206,6 +221,13 @@ iframe {
     background-color: #5AB266;
     opacity: .8;
   }
+  article {
+    background-color: #F97557;
+    opacity: .8;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   aside {
     padding: 4px;
     margin-bottom: 8px;
@@ -282,6 +304,13 @@ iframe {
     border-radius: 4px;
     background-color: #5AB266;
     opacity: .8;
+  }
+  article {
+    background-color: #F97557;
+    opacity: .8;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   aside {
     padding: 4px;
