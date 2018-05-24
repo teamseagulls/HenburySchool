@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/requestform.css">
   <link rel="stylesheet" href="css/GlobalMain.css">
+  <link rel="stylesheet" href="css/sitemap.css">
   <title>Henbury School website </title>
 </head>
 
@@ -72,29 +74,47 @@
   <!--end navigation-->
 
   <main>
-    <h1>Fundraising</h1>
-    <section class="info ">
-      <h2>Halikos Group presents the Annual Henbury Corporate Luncheon</h2>
-      <p>All proceeds from sales go toward the continuation of valuable programs we run here at Henbury School.</p>
+    <section class="absence">
+      <h2> Absence Report form  </h2>
+      <form action="index.html" method="post">
+        <fieldset>
+          <div class="regOption">
+            <label for="regOption">Please select a catagory. <br>I'm a:
+               <select name="catagoty" id="regOption">
+                 <option >Student</option>
+                 <option  >Guardian</option>
+               </select>
+            </label><br>
+          </div>
+          <label>Name: <input type="text" required="NAME"></label><br>
+          <label>Student ID: <input type="text" required="STUDENT ID"> </label><br>
+          <label>Address: <input type="text"></label> <br>
+          <label>Reasons For Absence: <br>  <textarea name="others" rows="5" cols="25"></textarea></label><br>
+          <label>Date from: <input type="date"></label><br>
+          <label>Date to: <input type="date"></label><br>
+          <label>Email Address: <input type="text"></label> <br>
+          <label>Parent/Guardian's Phone Number: <input type="tel" required></label> <br>
+          <button type="submit" name="submit" onclick="confirmation()">Submit Form</button><br>
+        </fieldset>
+      </form>
 
-
-      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FHenburyLuncheon%2Fphotos%2Fa.1041181279357878.1073741842.397864100356269%2F1049563901852949%2F%3Ftype%3D3&width=500" width="500" height="338" style="border:none;overflow:hidden"
-        scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
+      <h1> Frequently Asked Questions</h1>
+      <section>
+        <h3 class="question">Where is the Location?  </h3>
+        <p> <strong>Reply: </strong> Henbury School is located in Tiwi, near the Casuarina Shopping center. Its only 5 minutes walking Distance from casuarina Bus stop.</p>
+        <h3 class="question"> How to apply for job?  </h3>
+        <p> <strong>Reply: </strong> You can easily apply for any of our available positions through NT government recruit website. All our jobs are listed there. </p>
+        <p> Here aree some useful links: <br> <a href="http://www.det.nt.gov.au/jobs">Teaching in the Territory</a> <br> <a href="http://www.trb.nt.gov.au/">Teacher Registration</a> <br> <a href="http://www.workingwithchildren.nt.gov.au/">Working With Children Clearance</a>        </p>
+        <h3 class="question">How do I ask for a meeting with after school care staff?  </h3>
+        <p><strong>Reply: </strong> Please navigate to our Parents Portal and click "<a href="ptcommunication.html">Meet our staffs</a>" then click "OSHC Staff and fill up the form with appropriate Information.</p>
+      </section>
+      <section>
+        <h3>Contract info. </h3>
+        <p>Ph: (08) 89977077 <br> Address: 11 Henbury Avenue, Tiwi, Northern Territory 0810, Australia. </p>
+      </section>
     </section>
-    <section class="info extra">
-      <ul>
-        <li>Please contact the school for more information</li>
-        <li>Phone: 08 89977 077</li>
-        <li>Email: hcl.henbury@ntschools.net</li>
-        <li>FB: HenburyLuncheon <a href="https://www.facebook.com/HenburyLuncheon/"><img src="https://svgshare.com/i/5fq.svg" width="16" style="width: 16px;"> </a> </img>
-        </li>
-        <li>Post: 11 Henbury Avenue, Tiwi, NT 0810</li>
-        <li></li>
-        <li></li>
 
-      </ul>
-    </section>
+
 
   </main>
   <footer>
@@ -141,6 +161,8 @@
     </div>
   </footer>
   <script src="js/school.js"></script>
+  <script src="js.ashraf.js"></script>
+
 </body>
 
 </html>
