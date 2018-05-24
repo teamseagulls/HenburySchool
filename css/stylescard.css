@@ -349,6 +349,9 @@ body html {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 41670f3...  _+second
 @media screen and (max-width: 320px) {
   a {
     text-decoration: none;
@@ -458,6 +461,7 @@ body html {
       opacity: 1;
     }
   }
+<<<<<<< HEAD
 }
 =======
 footer ul {
@@ -487,3 +491,6 @@ footer h3 {
   color: green;
 }
 >>>>>>> d4f094d899468ddee4afaf7272868a21099bb814
+=======
+}
+>>>>>>> 41670f3...  _+second
