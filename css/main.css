@@ -74,7 +74,7 @@ a{
 /*make the logo and hamburger menu responsively displayed at each side*/
 
 .nav_bar {
-  position: relative;
+  position:relative;
   background-color: white;
   display: flex;
   flex-direction: row;
