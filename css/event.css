@@ -1,57 +1,64 @@
-.event{
+.event {
   background-color: #e0e2e5;
-  padding:20px;
-  margin-top:30px;
+  padding: 20px;
+  margin-top: 30px;
 }
 
-.event_heading{
+.event_heading {
   text-align: center;
 }
 
 /*set .container as flex, so the card will display in different line as screen size change*/
-.event_container{
+
+.event_container {
   display: flex;
   flex-direction: column;
 }
 
 /*set fixed card width and other card properties*/
-.event_item{
-  width:350px;
+
+.event_item {
+  width: 350px;
   background-color: #fff;
   border-radius: 2px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 /*set the media area ratio as 16:9 and to hide the overflow parts when hover on card*/
+
 .event_image {
   height: 197px;
   overflow: hidden;
 }
 
 /*make the image inherit the width and height of its parent-'.cardImage'*/
-.event_image>img{
+
+.event_image>img {
   /*overflow: hidden;*/
-  max-width:100%;
+  max-width: 100%;
 }
 
 /*when hover on card, the height of '.cardImage' will reduce, so that cardBody will move up*/
+
 .event_content {
   position: relative;
   height: 110px;
 }
 
-.event_title{
+.event_title {
   font-size: 24px;
   padding: 24px 16px 16px 16px;
 }
 
 /*style of primary text*/
-.event_date{
+
+.event_date {
   font-size: 14px;
-  padding:0 16px 16px 16px;
+  padding: 0 16px 16px 16px;
 }
 
 /*style of supporting text and hide it using opacity:0*/
+
 .event_description {
   position: absolute;
   font-size: 14px;
@@ -66,6 +73,7 @@
 }
 
 /*zoom in image when hover on card*/
+
 .event_item:hover img {
   opacity: 0.6;
   -webkit-transform: scale(1.2);
@@ -74,27 +82,31 @@
 }
 
 /*reduce the cardImage area,so the image will be hidden*/
+
 .event_item:hover .event_image {
   height: 90px;
 }
 
 /*animation of cardTitle when hover*/
+
 .event_item:hover .event_date {
   -webkit-animation: titleBlur 2s;
   animation: titleBlur 2s;
 }
 
 /*unhide the supporting text*/
+
 .event_item:hover .event_description {
   opacity: 1;
 }
 
-.event_action{
-  padding:8px;
+.event_action {
+  padding: 8px;
 }
 
 /*style of action button*/
-.btn{
+
+.btn {
   display: inline-block;
   width: 120px;
   height: 30px;
@@ -110,13 +122,14 @@
   transition: all 1s;
 }
 
-.btn:hover{
+.btn:hover {
   color: #122f5b;
   box-shadow: none;
   background-color: transparent;
 }
 
 /*self-defined animation*/
+
 @-webkit-keyframes titleBlur {
   0% {
     opacity: 0.6;
@@ -140,10 +153,10 @@
 }
 
 /*media queries*/
-@media all and (min-width:500px){
 
-  .event_container{
-    flex-flow:row wrap;
+@media all and (min-width:500px) {
+  .event_container {
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 }
