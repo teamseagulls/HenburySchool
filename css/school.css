@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* 2:30  */
+
 ul {
   list-style-type: none;
 }
@@ -71,7 +73,6 @@ body {
 
 .level_one_menu>li>a {
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 /*set padding for level two menu*/
@@ -99,42 +100,71 @@ body {
   display: block;
 }
 
-@media only screen and (min-width:900px) {
-  .nav_container {
-    max-width: 1200px;
+@media only screen and (max-width:900px) {
+  #logo {
+    display: none;
   }
-  /*hide the mobile menu bar in desktop version*/
+}
+
+@media only screen and (min-width:900px) {
+  body {
+    margin-top: 60px;
+  }
+  header {
+    position: fixed;
+    border-top: 6px solid #cf6667;
+    background-color: #30415D;
+    max-height: 48px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  nav {
+    float: right;
+  }
   .nav_bar {
     display: none;
   }
-  /*show level_one dropdown menu in default*/
   .navigation {
     display: block;
   }
   .primary_menu {
     background-color: #30415D;
-    width: 80%;
+    width: 100%;
     padding: 15px 10px 0 15px;
   }
-  /*change the flex direction*/
   .level_one_menu {
     flex-direction: row;
     justify-content: center;
   }
-  /*clear the menu padding*/
   .level_one_menu a {
     padding: 0 20px 0 20px;
   }
-  /* hover color change on each menue */
   .level_one_menu a:hover {
     background-color: #cf6667;
+    transition: .5s color;
   }
-  /*hover on primary_menu to see drop down menu*/
   .level_one_menu>li:hover .level_two_menu {
     display: block;
   }
-  /*clear the level two menu padding*/
   .level_two_menu>li {
     padding: 0;
+  }
+  .nav_container {
+    max-width: 1920px;
+  }
+  html {
+    font-family: "Oswald";
+  }
+  #logo {
+    float: left;
+    display: inline;
+    margin: 0;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
   }
 }
