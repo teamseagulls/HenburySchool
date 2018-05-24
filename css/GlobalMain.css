@@ -191,6 +191,21 @@ iframe {
     width: 600px;
     height: 650px;
   }
+  .rotate {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  .vertical {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 2%;
+    margin-left: -3px;
+    top: 0;
+  }
 }
 
 /* ok  */
@@ -288,7 +303,7 @@ iframe {
 @media only screen and (max-width:768px) {
   body {
     width: auto;
-    height: auto;
+    height: 900px;
     color: black;
     background-color: #F3F1F0;
   }
@@ -330,6 +345,9 @@ iframe {
     border-radius: 4px;
     background-color: #5AB266;
     opacity: .8;
+    position: relative;
+    left: 20%;
+    width: 74%;
   }
   article {
     background-color: #F97557;
@@ -344,6 +362,20 @@ iframe {
     border-radius: 4px;
     background-color: #3AE0A0;
     opacity: 0.8;
+  }
+  .rotate {
+    text-transform: rotate(90deg);
+    position: absolute;
+    left: 0;
+    top: 650px;
+  }
+  .vertical {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    top: 400px;
   }
   .picture {
     width: 95%;
@@ -438,6 +470,9 @@ iframe {
     background-color: #3AE0A0;
     opacity: 0.8;
   }
+  .vertical {
+    display: none;
+  }
   .picture {
     width: 95%;
     height: 300px;
@@ -525,6 +560,9 @@ iframe {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .vertical {
+    display: none;
+  }
   aside {
     padding: 4px;
     margin-bottom: 16px;
@@ -608,6 +646,9 @@ iframe {
     border-radius: 4px;
     background-color: #19323C;
     opacity: .8;
+  }
+  .vertical {
+    display: none;
   }
   article {
     background-color: #34344A;
@@ -710,6 +751,9 @@ iframe {
     background-color: #A89B9D;
     width: 100px;
     height: 100px;
+  }
+  .vertical {
+    display: none;
   }
   section {
     color: white;
@@ -816,5 +860,8 @@ iframe {
   iframe {
     width: 300px;
     height: 350px;
+  }
+  .vertical {
+    display: none;
   }
 }

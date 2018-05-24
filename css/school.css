@@ -66,13 +66,17 @@ body {
   text-decoration: none;
   color: white;
   line-height: 48px;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 
 /*set style for the level one menu only*/
 
 .level_one_menu>li>a {
-  font-weight: 400;
+  font-size: 11px;
+}
+
+.level_two_menu>li>a {
+  font-size: 10px;
 }
 
 /*set padding for level two menu*/
@@ -164,15 +168,15 @@ body {
   }
   .primary_menu {
     background-color: #30415D;
-    width: 100%;
-    padding: 15px 10px 0 15px;
+    width: 130px;
+    padding: 5px 0 0 5px;
   }
   .level_one_menu {
     flex-direction: row;
     justify-content: center;
   }
   .level_one_menu a {
-    padding: 0 20px 0 20px;
+    padding: 0 5px 0 5px;
   }
   .level_one_menu a:hover {
     background-color: #f55555;
