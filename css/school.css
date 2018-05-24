@@ -1,0 +1,204 @@
+*|* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2:30  */
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #F3F1F0;
+  box-sizing: border-box;
+}
+
+.nav_container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+/*make the logo and hamburger menu responsively displayed at each side*/
+
+.nav_bar {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav_burger {
+  position: relative;
+  width: 46px;
+  height: 40px;
+}
+
+/*use pseudo element to create hamburger menu; use box-shadow to draw another two lines*/
+
+.burger:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 36px;
+  height: 6px;
+  background: black;
+  box-shadow: 0 12px 0 0 black, 0 24px 0 0 black;
+}
+
+.level_one_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary_menu {
+  background-color: #76323f;
+}
+
+/*select all first and second level menu*/
+
+.level_one_menu a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 48px;
+  padding-left: 10px;
+}
+
+/*set style for the level one menu only*/
+
+.level_one_menu>li>a {
+  font-weight: 400;
+}
+
+/*set padding for level two menu*/
+
+.level_two_menu>li {
+  padding-left: 24px;
+}
+
+/*hide the level one menu in default*/
+
+.navigation {
+  display: none;
+}
+
+/*hide the level two menu in default*/
+
+.level_two_menu {
+  display: none;
+  background-color: #30414D;
+}
+
+/*show the menu when click on it*/
+
+.show {
+  display: block;
+}
+
+@media only screen and (max-width:900px) {
+  #logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:900px) {
+  body {
+    margin-top: 60px;
+  }
+  header {
+    position: fixed;
+    border-top: 6px solid #f55555;
+    background-color: #30415D;
+    max-height: 48px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  nav {
+    float: right;
+  }
+  .shadow {
+    position: relative;
+  }
+  .shadow:before, .shadow:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-squre-shadow: 0 35px 20px #777;
+    -moz-squre-shadow: 0 35px 20px #777;
+    squre-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .shadow:after {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+  }
+  .nav_bar {
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+  .primary_menu {
+    background-color: #30415D;
+    width: 100%;
+    padding: 15px 10px 0 15px;
+  }
+  .level_one_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .level_one_menu a {
+    padding: 0 20px 0 20px;
+  }
+  .level_one_menu a:hover {
+    background-color: #f55555;
+    transition: .5s color;
+  }
+  .level_one_menu>li:hover .level_two_menu {
+    display: block;
+  }
+  .level_two_menu {
+    display: none;
+  }
+  .level_two_menu>li {
+    padding: 0;
+  }
+  .nav_container {
+    max-width: 1920px;
+  }
+  html {
+    font-family: "Oswald";
+  }
+  #logo {
+    float: left;
+    display: inline;
+    margin: 0;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+  }
+}
