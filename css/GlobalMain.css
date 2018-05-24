@@ -10,9 +10,11 @@ header {
   width: auto;
   height: auto;
   color: black;
+  z-index: 70;
 }
 
 main {
+  z-index: -70;
   margin-top: 10px;
   padding-left: 5%;
   padding-right: 5%;

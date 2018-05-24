@@ -112,7 +112,7 @@ body {
   }
   header {
     position: fixed;
-    border-top: 6px solid #cf6667;
+    border-top: 6px solid #f55555;
     background-color: #30415D;
     max-height: 48px;
     -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -144,7 +144,7 @@ body {
     padding: 0 20px 0 20px;
   }
   .level_one_menu a:hover {
-    background-color: #cf6667;
+    background-color: #f55555;
     transition: .5s color;
   }
   .level_one_menu>li:hover .level_two_menu {
