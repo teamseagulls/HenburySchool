@@ -4,6 +4,8 @@ body {
   background-color: #F3F1F0;
 }
 
+/* 2:30*/
+
 header {
   width: auto;
   height: auto;
@@ -41,16 +43,7 @@ p {
   padding-left: 5px;
   padding-bottom: 5px;
   line-height: 20px;
-}
-
-section {
-  color: white;
-  padding: 4px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: #5AB266;
-  opacity: .8;
-}
+}2
 
 article {
   background-color: #F97557;
@@ -861,7 +854,11 @@ iframe {
     width: 300px;
     height: 350px;
   }
+<<<<<<< HEAD
   .vertical {
     display: none;
   }
 }
+=======
+}
+>>>>>>> d4f094d899468ddee4afaf7272868a21099bb814
