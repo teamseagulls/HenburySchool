@@ -45,15 +45,6 @@ p {
   line-height: 20px;
 }
 
-section {
-  color: white;
-  padding: 4px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: #5AB266;
-  opacity: .8;
-}
-
 article {
   background-color: #F97557;
   opacity: .8;

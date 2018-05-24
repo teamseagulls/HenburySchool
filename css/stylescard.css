@@ -63,7 +63,7 @@ body html {
   left: 0;
 }
 
-label span {
+.next span, .prev span{
   position: absolute;
   font-size: 100pt;
   top: 50%;

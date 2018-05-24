@@ -23,18 +23,21 @@ function dropDown(tagId) {
 
 window.onload = function(){
   //click the hamburger menu icon to show and fold the menu
-  var burger=document.querySelector('.nav_burger');
+  var burger=document.querySelector('.burger_btn');
   console.log(burger);
-  var menu=document.querySelector('.navigation');
+  var menu=document.querySelector('.navigation_list');
+  console.log(menu);
+  var main_menu=document.querySelector('.navigation_list');
+  //click invoke checkbox's onclick event
   burger.addEventListener("click",function(){
-    menu.classList.toggle('show');
+      menu.classList.toggle('show');
   },false);
 
   //click the level one menu to show and fold the submenu
   var menu_one=document.querySelectorAll('.dropdown');
   //store the opened menu
   var openedmenu;
-  for(var i=0;i<menu_one.length;i++){
+  for(var i=0,length=menu_one.length;i<length;i++){
     menu_one[i].addEventListener("click",function(){
       var menu_two_item=this.nextElementSibling;
       //close previous opened dropdown menu once user click another level one menu
@@ -46,5 +49,4 @@ window.onload = function(){
       console.log(openedmenu);
     },false);
   }
-
 }

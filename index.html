@@ -5,10 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="stylesheet" href="css/school.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/stylescard.css">
-  <link rel="stylesheet" href="css/GlobalMain.css">
-  <link rel="stylesheet" href="css/sitemap.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Henbury School</title>
 
 </head>
@@ -16,73 +15,62 @@
 <body>
   <!--start navigation-->
   <header>
-    <div class="topline">
+    <section class="nav_container">
+      <nav class="navigation">
 
-      <img id="logo" src="images/logo.png" width="53px" height="53px" alt="school logo">
-    </div>
+        <div class="nav_bar">
+          <div class="nav_logo">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="school logo"><span class="logo_name">Henbury School</span></a>
+          </div>
 
-
-
-    <div class="nav_container">
-
-      <div class="nav_bar">
-        <div class="nav_logo">
-          <a href="index.html">Henbury School</a>
+          <!--hamburger menu-->
+          <div class="nav_burger">
+            <input type="checkbox" class="burger_checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger_btn">
+              <span class="burger_icon">&nbsp;</span>
+            </label>
+          </div>
         </div>
-        <div class="nav_burger">
-          <div class="burger"></div>
-        </div>
+
+        <!--main navigation list-->
+        <ul class="navigation_list">
+          <li> <a href="index.html" class="primary_menu">Home</a></li>
+          <li> <a href="about.html" class="primary_menu">About</a></li>
+
+          <li> <a href="#" class="primary_menu dropdown">Fundraising
+            <div class="navigation_dropicon"></div>
+            </a>
+            <ul class="level_two_menu">
+              <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
+              <li> <a href="studentCreation.html">Student Creation</a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="event&program.html" class="primary_menu">Events & Programs</a></li>
+
+          <li> <a href="#" class="primary_menu dropdown">Parents Portal
+            <div class="navigation_dropicon"></div>
+            </a>
+            <ul class="level_two_menu">
+              <li> <a href="teachingteam.html">Teaching Team </a> </li>
+              <li> <a href="afterschoolcare.html">After School Care</a> </li>
+              <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
+            </ul>
+          </li>
+
+          <li> <a href="contact.html" class="primary_menu">Contact</a></li>
+        </ul>
+
+      </nav>
+    </section>
+
+    <section class="header_info">
+      <h1 class="header_description"></h1>
+      <div class="header_img">
+        <img src="" alt=""/>
       </div>
-      <div class="header">
-        <nav class="navigation">
-          <ul class="level_one_menu">
-            <li> <a href="index.html" class="primary_menu ">Home</a></li>
-            <li> <a href="#" class="primary_menu dropdown">About</a>
-              <ul class="level_two_menu">
-                <li> <a href="outreachclass.html">Outreach Class</a> </li>
-                <li> <a href="annualreport.html">Anual Report</a> </li>
-                <li> <a href="council.html">Council</a> </li>
-                <li> <a href="employment.html">Employment</a> </li>
-              </ul>
-            </li>
+    </section>
 
-            <li> <a href="#" class="primary_menu dropdown">Fundraising</a>
-              <ul class="level_two_menu">
-                <li> <a href="corporateluncheon.html">Corporate Luncheon </a> </li>
-                <li> <a href="otherhelp.html">Other Help </a> </li>
-              </ul>
-            </li>
-
-            <li> <a href="#" class="primary_menu dropdown">News & Events</a>
-              <ul class="level_two_menu">
-                <li> <a href="news.html">News </a> </li>
-                <li> <a href="calendar.html">Calendar </a> </li>
-              </ul>
-            </li>
-
-            <li> <a href="#" class="primary_menu dropdown">Parents Portal</a>
-              <ul class="level_two_menu">
-                <li> <a href="teachingteam.html">Teaching Team </a> </li>
-                <li> <a href="afterschoolcare.html">After School Care</a> </li>
-                <li> <a href="ptcommunication.html">Meet Our staffs </a> </li>
-              </ul>
-            </li>
-
-            <li> <a href="programs.html" class="primary_menu">Programs</a></li>
-
-            <li> <a href="#" class="primary_menu dropdown">Contact</a>
-              <ul class="level_two_menu">
-                <li> <a href="absence.html">Absence </a> </li>
-
-                <li> <a href="faq.html">FAQ </a> </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-
-    </div>
   </header>
   <!--end navigation-->
 
@@ -192,25 +180,24 @@
             <li> <a href="faq.html">FAQ</a> </li>
           </ul>
         </div>
-        <div class="col social">
-          <h1>Social</h1>
 
-          <a href="https://www.facebook.com/HenburySchool/"><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"> </a> </img>
-
+        <div class="social_icon">
+          <ul>
+            <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+            <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+            <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+          </ul>
         </div>
 
 
         <div class="clearfix"></div>
       </div>
     </div>
-
-
-    &copy;Team: Seagull, Members: Md Ashraful Islam, A J M Hossain Siddiquei Ruadh, Huimin Huang. Charles Darwin University.
   </footer>
   </div>
 
 
-  <script src="js/school.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
