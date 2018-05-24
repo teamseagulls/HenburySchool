@@ -1,4 +1,10 @@
-body, header {
+body {
+  width: auto;
+  height: auto;
+  background-color: #F3F1F0;
+}
+
+header {
   width: auto;
   height: auto;
   color: black;
@@ -105,7 +111,13 @@ iframe {
     width: 80%;
     box-sizing: content-box;
   }
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -182,7 +194,13 @@ iframe {
 /* ok  */
 
 @media only screen and (max-width:860px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -266,7 +284,13 @@ iframe {
 /* ok  */
 
 @media only screen and (max-width:768px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -350,7 +374,13 @@ iframe {
 /* ok  */
 
 @media only screen and (max-width:650px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -438,7 +468,13 @@ iframe {
 /*  */
 
 @media only screen and (max-width:440px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -525,7 +561,13 @@ iframe {
 /*     ok  */
 
 @media only screen and (max-width:360px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -581,7 +623,8 @@ iframe {
     opacity: 0.8;
   }
   a {
-    color: #D6FFF6;
+    color: black;
+    text-decoration: none;
   }
   .picture {
     width: 90%;
@@ -614,7 +657,13 @@ iframe {
 /*     ok     */
 
 @media only screen and (max-width:340px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
@@ -690,7 +739,13 @@ iframe {
 /*    ok     */
 
 @media only screen and (max-width:320px) {
-  body, header {
+  body {
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #F3F1F0;
+  }
+  header {
     width: auto;
     height: auto;
     color: black;
