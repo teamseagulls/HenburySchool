@@ -11,3 +11,7 @@ function openStaff(evt, x) {
   document.getElementById(x).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function confirmation() {
+  var x = confirm("Submit this form?");
+}
