@@ -461,6 +461,10 @@ width, it will loss its width inherited from its parent, totally no width, not e
   .navigation_list>li:hover .level_two_menu {
     display: block;
   }
+
+  .navigation_list>li:hover {
+    border-bottom: 2px solid yellow;
+  }
   /*clear the level two menu padding*/
   .level_two_menu>li {
     padding: 0;
