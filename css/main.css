@@ -1,61 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: #fff;
-	color: #222;
+  background-color: #fff;
+  color: #222;
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.header_info{
+.header_info {
   background-color: #6d6c69;
-  opacity:.8;
   margin-top: 20px;
 }
 
-.page_heading{
-  color:white;
+.page_heading {
+  color: white;
   text-align: center;
-  padding:10px;
+  padding: 10px;
 }
 
 /*set the style for image container*/
-.image_container{
+
+.image_container {
   width: 85%;
   margin: 25px auto;
   position: relative;
 }
 
-.header_img{
-  width:90%;
-  opacity:0.6;
+.header_img {
+  width: 90%;
+  opacity: 0.6;
 }
 
-.image_fit{
+.image_fit {
   object-fit: contain;
-  height:auto;
+  height: auto;
   position: relative;
   left: 5%;
   top: 0;
   /* right: 0; */
 }
 
-.logo_name{
+.logo_name {
   font-size: 24px;
-  color:black;
+  color: black;
 }
 
 /*set the style for navigation container*/
@@ -66,15 +65,15 @@ a{
   margin: 0 auto;
 }
 
-.logo{
-   width:53px;
-   height:53px;
+.logo {
+  width: 53px;
+  height: 53px;
 }
 
 /*make the logo and hamburger menu responsively displayed at each side*/
 
 .nav_bar {
-  position:relative;
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -102,7 +101,7 @@ a{
 /*set style for the button - (label) outside three line burger menu*/
 
 .burger_btn {
-  display:  block;
+  display: block;
   position: relative;
   top: 0;
   right: 0;
@@ -148,14 +147,16 @@ a{
 
 /*transform the burger to crossed line when clicked on the burger menu*/
 
-.burger_checkbox:checked + .burger_btn .burger_icon {
+.burger_checkbox:checked+.burger_btn .burger_icon {
   background: transparent;
 }
-.burger_checkbox:checked + .burger_btn .burger_icon::before {
+
+.burger_checkbox:checked+.burger_btn .burger_icon::before {
   top: 0;
   transform: rotate(-45deg);
 }
-.burger_checkbox:checked + .burger_btn .burger_icon::after {
+
+.burger_checkbox:checked+.burger_btn .burger_icon::after {
   top: 0;
   transform: rotate(45deg);
 }
@@ -190,16 +191,16 @@ a{
 }
 
 /*set style for the menu drop down icon*/
-.navigation_dropicon{
+
+.navigation_dropicon {
   display: inline-flex;
   position: relative;
-  transform: translate(50px,-10px);
+  transform: translate(50px, -10px);
   transform-origin: center;
   /* transition: all .3s; */
 }
 
-.navigation_dropicon::before,
-.navigation_dropicon::after{
+.navigation_dropicon::before, .navigation_dropicon::after {
   background: #323232;
   content: '';
   display: block;
@@ -212,11 +213,11 @@ a{
   transform-origin: bottom;
 }
 
-.navigation_dropicon::before{
+.navigation_dropicon::before {
   transform: rotate(45deg) translateX(-23%);
 }
 
-.navigation_dropicon::after{
+.navigation_dropicon::after {
   transform: rotate(-45deg) translateX(23%);
 }
 
@@ -226,8 +227,8 @@ a{
   padding-left: 24px;
 }
 
-.level_two_menu a{
-  color:grey;
+.level_two_menu a {
+  color: grey;
 }
 
 /*hide the level two menu in default*/
@@ -241,20 +242,103 @@ a{
 .show {
   display: block;
 }
+<<<<<<< HEAD
+=======
 
-/*set style for btn link*/
-.btn{
-  width:200px;
-  height:50px;
-  text-align:center;
-  background-color: yellow;
-  line-height: 50px;
-  position:relative;
+/*start social icon style*/
+
+.social_icon {
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
 }
 
-.btn a{
+/* Style the list items inside the UL list, by setting its width, height and line-height
+  and float them to left and set its border and border-radius.
+ */
+
+.social_icon li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px
+to align it properly */
+
+.fa {
+  color: #D8E2DC;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+
+/*facebook*/
+
+.social_icon li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.social_icon li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+
+.social_icon li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+
+.social_icon li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.social_icon li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+>>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
+
+/*set style for btn link*/
+
+.btn {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: yellow;
+  line-height: 50px;
+  position: relative;
+}
+
+.btn a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   font: bold 20px Arial;
 }
 
@@ -262,49 +346,51 @@ a{
 absolute position relate to window
 once open absolute position, if no content in block element and it doesn't have original
 width, it will loss its width inherited from its parent, totally no width, not equal to 0*/
-.btn_border_top, .btn_border_bottom{
+
+.btn_border_top, .btn_border_bottom {
   height: 5px;
   background-color: white;
-  position:absolute;
-  width:0%;
+  position: absolute;
+  width: 0%;
 }
 
 /*right up corner relative to btn*/
-.btn_border_top{
-  right:0;
-  top:0;
+
+.btn_border_top {
+  right: 0;
+  top: 0;
 }
 
-.btn:hover .btn_border_top{
-  transition:.3s;
-  width:100%;
-  background-color: yellow;
-}
-
-.btn_border_bottom{
-  left:0;
-  bottom:0;
-  background-color: yellow;
-}
-
-.btn:hover .btn_border_bottom{
+.btn:hover .btn_border_top {
   transition: .3s;
-  width:100%;
+  width: 100%;
+  background-color: yellow;
 }
 
-.btn:hover{
+.btn_border_bottom {
+  left: 0;
+  bottom: 0;
+  background-color: yellow;
+}
+
+.btn:hover .btn_border_bottom {
+  transition: .3s;
+  width: 100%;
+}
+
+.btn:hover {
   background-color: white;
 }
 
-.btn:hover a{
-  color:yellow;
+.btn:hover a {
+  color: yellow;
 }
 
-.btn_group{
+.btn_group {
   width: 700px;
   display: flex;
   justify-content: space-around;
-  margin:100px 0 0 100px;
+  margin: 100px 0 0 100px;
 }
 
 /*start styling for the content in home page*/
@@ -415,9 +501,12 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 
 /*start footer styling*/
+<<<<<<< HEAD
 .footer{
   background-color:#211545;
 }
+=======
+>>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
 
 .footer_container {
   padding:20px 10px;
@@ -429,7 +518,25 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 .column {
   box-sizing: border-box;
+<<<<<<< HEAD
   margin: 20px 0px 0px 30px;
+=======
+  padding: 0px 0px 0px 15px;
+}
+
+.footer_container .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 10px 5px 0px;
+  color: rgba(255, 255, 255, 255);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+  border-bottom: 2px solid grey;
+>>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
 }
 
 .footer a{
@@ -505,6 +612,7 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   transition: all 0.5s ease;
 }
 
+<<<<<<< HEAD
 .wrapper li:hover .fa-twitter {
   color: #00aced;
   text-shadow: 0 0 15px #00aced;
@@ -538,13 +646,16 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 @media screen and (min-width:900px) {
   .nav_container{
+=======
+@media screen and (min-width:880px) {
+  .nav_container {
+>>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
     max-width: 1000px;
   }
   /*hide the mobile menu bar in desktop version*/
-  .nav_bar{
+  .nav_bar {
     display: none;
   }
-
   .primary_menu {
     width: 100%;
     padding: 5px 20px 0 20px;
@@ -555,14 +666,11 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
     flex-direction: row;
     justify-content: space-between;
   }
-
-/*make the dropdown icon closer to menu*/
-  .navigation_dropicon::before,
-  .navigation_dropicon::after{
-    left:-40px;
-    top:2px;
+  /*make the dropdown icon closer to menu*/
+  .navigation_dropicon::before, .navigation_dropicon::after {
+    left: -40px;
+    top: 2px;
   }
-
   /*clear the menu padding*/
   .navigation_list a {
     padding: 0 25px 0 25px;
@@ -571,7 +679,6 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   .navigation_list>li:hover .level_two_menu {
     display: block;
   }
-
   .navigation_list>li:hover {
     border-bottom: 2px solid yellow;
   }
@@ -579,13 +686,12 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   .level_two_menu>li {
     padding: 0;
   }
-
-  .level_two_menu{
-    position:absolute;
-    border:1px solid black;
+  .level_two_menu {
+    position: absolute;
+    border: 1px solid black;
     background-color: white;
-    z-index:1;
-    top:60px;
+    z-index: 1;
+    top: 60px;
     box-shadow: 5px 10px #484f5b;
   }
 
@@ -601,3 +707,89 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
     width:15%;
   }
 }
+
+
+.hcl {
+  margin-left: auto;
+  margin-right: auto;
+    width: 80%;
+}
+
+
+.hclheadimg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+.mycards{
+  padding-left: 10%;
+}
+.cardtitle  {
+    color: #F6FEFF;
+    height:54px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 19px;
+}
+  .cardtext  {
+    color: #B8C0C6;
+    font-size: 0.875rem;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .cardaction    {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #f9b405;
+    padding: 15px;
+
+  }
+
+  }
+  .card   {
+    background: #F0F1EB;
+    border-radius: 2px;
+    display: inline-block;
+    height: 400px;
+    margin: 1rem;
+    position: relative;
+    width: 200px;
+  }
+  .card-1   {
+    background: #F0F1EB;
+    border-radius: 10px;
+    display: inline-block;
+    height: 350px;
+    margin: 1rem;
+    position: relative;
+    width: 315px;
+    float: left;
+
+    box-shadow: 0 3px 1px rgba(66, 66, 66, 1);
+    transition: .5s cubic-bezier(.0,.0,.05,1);
+  }
+  .card-1 h2 {
+    color: black;
+  }
+  .card-1:hover   {
+
+    transform: scale(1.05);
+  }
+
+  .sect {
+        display: inline-block;
+        padding-left: 20%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+  }
+
+.sect p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+    }
