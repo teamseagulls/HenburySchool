@@ -2,15 +2,6 @@
   display: none;
 }
 
-.studentsdrawing {
-  display: inline-block;
-}
-
-.studentsdrawing img {
-  margin: 5px;
-  padding: 5px;
-}
-
 .homeslider {
   margin: 40px 0px 0px 150px;
   position: relative;
