@@ -74,13 +74,22 @@ window.onload = function(){
     }
   }
 
-  window.onscroll=function(){
+  window.addEventListener("scroll", function(){
     var navbar=document.querySelector('.nav_container');
     var navigation=document.querySelector('.navigation');
-    if(navbar.nextElementSibling.getBoundingClientRect().top<=0){
-      navigation.classList.add('navfixed');
-    }
+
+
+});
+  var navigation=document.querySelector('.navigation');
+navigation.onmousewheel=function(){
+  console.log(navigation.offsetTop);
 }
+/*
+if(navbar.nextElementSibling.getBoundingClientRect().top<=0){
+  navigation.classList.add('navfixed');
+  console.log(window.scrollY);
+}
+*/
 
 
   showBurgermenu();

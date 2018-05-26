@@ -243,27 +243,24 @@ a {
   display: block;
 }
 
-/*set style for btn link*/
+/*set style for call to action button link*/
 
-.btn {
+.call_to_action {
   width: 200px;
   height: 50px;
   text-align: center;
-  background-color: yellow;
+  background-color: #122f5b;
   line-height: 50px;
   position: relative;
+  margin:30px auto;
 }
 
-.btn a {
-  text-decoration: none;
+.call_to_action a {
   color: #fff;
   font: bold 20px Arial;
 }
 
-/*once open obsolute position, if haven't assign relate to what to position, it will
-absolute position relate to window
-once open absolute position, if no content in block element and it doesn't have original
-width, it will loss its width inherited from its parent, totally no width, not equal to 0*/
+/*set style for call to action button border*/
 
 .btn_border_top, .btn_border_bottom {
   height: 5px;
@@ -272,36 +269,37 @@ width, it will loss its width inherited from its parent, totally no width, not e
   width: 0%;
 }
 
-/*right up corner relative to btn*/
-
 .btn_border_top {
   right: 0;
   top: 0;
+  background-color: #122f5b;
 }
 
-.btn:hover .btn_border_top {
+.call_to_action:hover .btn_border_top {
   transition: .3s;
   width: 100%;
-  background-color: yellow;
 }
 
 .btn_border_bottom {
   left: 0;
   bottom: 0;
-  background-color: yellow;
+  background-color: #122f5b;
 }
 
-.btn:hover .btn_border_bottom {
+.call_to_action:hover .btn_border_bottom {
   transition: .3s;
   width: 100%;
 }
 
-.btn:hover {
+.call_to_action:hover {
   background-color: white;
 }
 
-.btn:hover a {
-  color: yellow;
+/*hover on button color change*/
+.call_to_action:hover a {
+  color:#122f5b;
+  display: block;
+  line-height: 50px;
 }
 
 .btn_group {

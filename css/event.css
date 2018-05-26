@@ -18,7 +18,9 @@
 /*set fixed card width and other card properties*/
 
 .event_item {
-  width: 350px;
+  min-width: 320px;
+  max-width:350px;
+  width:80%;
   background-color: #fff;
   border-radius: 2px;
   margin-top: 50px;
@@ -43,6 +45,7 @@
 .event_content {
   position: relative;
   height: 110px;
+  transition: height 500ms linear;
 }
 
 .event_title {
@@ -65,7 +68,7 @@
   line-height: 28px;
   color: #666C74;
   padding: 16px 16px 24px 16px;
-  opacity: 0;
+  z-index: -1;
 }
 
 .event_item:hover .event_content {
@@ -85,6 +88,7 @@
 
 .event_item:hover .event_image {
   height: 90px;
+  transition: height 500ms linear;
 }
 
 /*animation of cardTitle when hover*/
@@ -97,7 +101,8 @@
 /*unhide the supporting text*/
 
 .event_item:hover .event_description {
-  opacity: 1;
+  z-index: 1;
+  transition: all 500ms linear;
 }
 
 .event_action {
@@ -122,7 +127,7 @@
   transition: all 1s;
 }
 
-.event_btn:hover {
+.event_btn:hover{
   color: #122f5b;
   box-shadow: none;
   background-color: transparent;
