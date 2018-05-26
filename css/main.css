@@ -242,88 +242,6 @@ a {
 .show {
   display: block;
 }
-<<<<<<< HEAD
-=======
-
-/*start social icon style*/
-
-.social_icon {
-  width: 50px;
-  position: fixed;
-  bottom: 10px;
-  right: 5px;
-}
-
-/* Style the list items inside the UL list, by setting its width, height and line-height
-  and float them to left and set its border and border-radius.
- */
-
-.social_icon li {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 10px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 5px solid #D8E2DC;
-  float: left;
-  transition: all 0.5s ease;
-}
-
-/* Style the icons by setting its color and margin-top value to 20px
-to align it properly */
-
-.fa {
-  color: #D8E2DC;
-  transition: all 0.5s ease;
-}
-
-/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-  to icons for glowing effect and use transition property for smooth transition effect. */
-
-/*facebook*/
-
-.social_icon li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-.social_icon li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-/*twitter*/
-
-.social_icon li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
-
-.wrapper li:hover .fa-twitter {
-  color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
-
-/* instagram */
-
-.social_icon li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-.social_icon li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
->>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
 
 /*set style for btn link*/
 
@@ -501,12 +419,9 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 
 /*start footer styling*/
-<<<<<<< HEAD
 .footer{
   background-color:#211545;
 }
-=======
->>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
 
 .footer_container {
   padding:20px 10px;
@@ -518,25 +433,7 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 .column {
   box-sizing: border-box;
-<<<<<<< HEAD
   margin: 20px 0px 0px 30px;
-=======
-  padding: 0px 0px 0px 15px;
-}
-
-.footer_container .col h1 {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 17px;
-  padding: 20px 10px 5px 0px;
-  color: rgba(255, 255, 255, 255);
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.250em;
-  border-bottom: 2px solid grey;
->>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
 }
 
 .footer a{
@@ -612,7 +509,6 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   transition: all 0.5s ease;
 }
 
-<<<<<<< HEAD
 .wrapper li:hover .fa-twitter {
   color: #00aced;
   text-shadow: 0 0 15px #00aced;
@@ -646,10 +542,6 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 
 @media screen and (min-width:900px) {
   .nav_container{
-=======
-@media screen and (min-width:880px) {
-  .nav_container {
->>>>>>> 6c8cf37c45880eae2e65e75ff5977b4ee15f7884
     max-width: 1000px;
   }
   /*hide the mobile menu bar in desktop version*/
