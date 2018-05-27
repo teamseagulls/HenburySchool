@@ -74,23 +74,15 @@ window.onload = function(){
     }
   }
 
+  /*fixed menu*/
   window.addEventListener("scroll", function(){
     var navbar=document.querySelector('.nav_container');
     var navigation=document.querySelector('.navigation');
-
-
-});
-  var navigation=document.querySelector('.navigation');
-navigation.onmousewheel=function(){
-  console.log(navigation.offsetTop);
-}
-/*
-if(navbar.nextElementSibling.getBoundingClientRect().top<=0){
-  navigation.classList.add('navfixed');
-  console.log(window.scrollY);
-}
-*/
-
+    if(navbar.nextElementSibling.getBoundingClientRect().top<=0){
+      navigation.classList.add('navfixed');
+      console.log(window.scrollY);
+    }
+  },false);
 
   showBurgermenu();
   showSubmenu();

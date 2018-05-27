@@ -62,7 +62,6 @@
     </section>
 
     <section class="header_info">
-      <h1 class="page_heading">Henbury School _ <strong>"Preparing For Future Lifestyles"</strong></h1>
       <div class="image_container">
         <img class="image_fit header_img" src="images/home_header.png" alt="Home Page Main Image" />
       </div>
@@ -166,217 +165,58 @@
       </ul>
     </section>
 
-    <!--
-    <center>
-      <form method="post">
-        <fieldset>
-          <h1>Apply Now!</h1>
-
-          <div class="user_input">
-
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="fuser_irst_name">
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="user_last_name">
-            </tr>
-          </div>
-
-          <div class="user_input">
-
-          </div>
-
-          <div class="user_input">
-            <label for="mail">Email Address:</label>
-            <input type="email" id="mail" name="user_email">
-          </div>
-
-          <div class="user_input">
-            <label for="phone_num">Telephone Number:</label>
-            <input type="text" id="phone_num" name="user_phone">
-          </div>
-
-          <div class="user_input">
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="user_address">
-          </div>
-
-          <div class="user_input">
-            <label for="address">Select the job position:</label>
-            <input type="dropdown" id="address" name="user_address">
-          </div>
-
-          <div class="user_input">
-            <label for="birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="user_birthdate">
-          </div>
-
-          <div class="user_input">
-            <label for="birthdate">Upload your resume:</label>
-            <input type="text" id="birthdate" name="user_birthdate">
-          </div>
-
-          <div class="user_input button">
-            <button type="submit" onclick="submit">Submit</button>
-          </div>
-        </fieldset>
-      </form>
-    -->
-
-    <fieldset>
-      <h2>Employment Application</h2>
-      <!--
-  <script type="text/javascript">
-  function ValidateForm(frm) {
-  if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
-  if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
-  if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
-  if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
-  if (frm.Position.value == "") {alert('Position is required.');frm.Position.focus();return false;}
-  if (frm.Phone.value == "") {alert('Phone is required.');frm.Phone.focus();return false;}
-  if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
-  return true; }
-  function ReloadCaptchaImage(captchaImageId) {
-  var obj = document.getElementById(captchaImageId);
-  var src = '' + obj.src;
-  obj.src = '';
-  var date = new Date();
-  var pos = src.indexOf('&rad=');
-  if (pos >= 0) { src = src.substr(0, pos); }
-  obj.src = src + '&rad=' + date.getTime();
-  return false; }
-  </script>
-  -->
-      <center>
-        <form>
-          <input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="your@email.com" />
-          <input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="PNUFKH24C2ZN" />
-          <input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-          <input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
-          <input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
-          <input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
-          <table border="0" cellpadding="5" cellspacing="0">
-            <tr>
-              <td style="width:50%">
-                <b>First name *</b><br />
-                <input name="First_Name" type="text" maxlength="50" style="width:260px" />
-              </td>
-              <td style="width:50%">
-                <b>Last name *</b><br />
-                <input name="Last_Name" type="text" maxlength="50" style="width:260px" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <b>Email *</b><br />
-                <input name="Email_Address" type="text" maxlength="100" style="width:535px" />
-              </td>
-            </tr>
-            <tr>
-
-            </tr>
-            <tr>
-              <td colspan="2">
-                <b>Position you are applying for *</b><br />
-                <input name="Position" type="text" maxlength="100" style="width:535px" />
-              </td>
-            </tr>
-            <tr>
-              <td style="width:50%">
-
-                <b>When can you start?</b><br />
-                <input name="StartDate" type="text" maxlength="50" style="width:260px" />
-              </td>
-            </tr>
-            <tr>
-              <td style="width:50%">
-                <b>Phone *</b><br />
-                <input name="Phone" type="text" maxlength="50" style="width:260px" />
-              </td>
-              <td style="width:50%">
-                <b>Fax</b><br />
-                <input name="Fax" type="text" maxlength="50" style="width:260px" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <b>Are you willing to relocate?</b><br />
-                <input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes &nbsp; &nbsp; &nbsp;
-                <input name="Relocate" type="radio" value="No" /> No &nbsp; &nbsp; &nbsp;
-                <input name="Relocate" type="radio" value="NotSure" /> Not sure
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <b>Last company you worked for</b><br />
-                <input name="Organization" type="text" maxlength="100" style="width:535px" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <b>Reference / Comments / Questions</b><br />
-                <textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
-              </td>
-            </tr>
-          </table>
-          <br />
-          <div style="text-align:center;">
-            <table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
-              <tr>
-                <td colspan="2" style="padding-bottom:18px;">
-
-            </table>
-            <br /><br />
-            <label for="submit"><input type="submit" id="submit" name="submit"></label><br>
-          </div>
-        </form>
-    </fieldset>
-    </center>
-
 
   </main>
-  <footer>
+  <!--start footer-->
 
+  <footer>
     <div class="footer">
       <div class="footer_container">
-        <div class="col">
-          <a href="about.html"><h1>About</h1></a>
-        </div>
-        <div class="col">
-          <h1 href="fundraising.html">Fundraising</h1>
+        <div class="column">
           <ul>
-            <li> <a href="corporateluncheon.html">Corporate Luncheon</a> </li>
-            <li> <a href="studentcreation.html">Student Creation</a> </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h1>Events & Programs</h1>
-        </div>
-        <div class="col">
-          <h1>Parents Portal</h1>
-          <ul>
-            <li> <a href="teachingteam.html">Teaching Team</a> </li>
-            <li> <a href="afterschoolcare.html">After School Care</a> </li>
-            <li> <a href="ptcommunication.html">Meet Our Stuff</a> </li>
+            <li><a href="corporateluncheon.html" class="footer_menu_title">Fundraising</a></li>
+            <li><a href="corporateluncheon.html">Corporate Luncheon</a></li>
+            <li><a href="studentcreation.html">Student Creation</a></li>
           </ul>
         </div>
 
-        <div class="col">
-          <h1>Contact</h1>
-        </div>
-
-        <div class="social_icon">
+        <div class="column">
           <ul>
-            <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-            <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-            <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+              <li><a href="#" class="footer_menu_title">Parent Portal</a></li>
+            <li><a href="teachingteam.html">Teaching Team</a></li>
+            <li><a href="afterschoolcare.html">After School Care<a></li>
+              <li><a href="communication.html">Meet Our Stuff</a></li>
           </ul>
         </div>
 
-        <div class="clearfix"></div>
+        <div class="column">
+            <ul>
+            <li><a href="event&program.html" class="footer_menu_title">Events & Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul>
+            <li><a href="#" class="footer_menu_title">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul>
+            <li><a href="about.html" class="footer_menu_title">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social_icon">
+        <ul>
+          <li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+          <li class="twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+          <li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+        </ul>
       </div>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 

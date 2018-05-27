@@ -1,6 +1,7 @@
 function openStaff(evt, x) {
   var i, desc, options;
   desc = document.getElementsByClassName("desc");
+  console.log(desc);
   for (i = 0; i < desc.length; i++) {
     desc[i].style.display = "none";
   }

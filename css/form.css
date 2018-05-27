@@ -1,0 +1,69 @@
+
+fieldset{
+  border:0;
+}
+
+/*center the form on the page and make the outline of the form obvious*/
+.form {
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: #1f4684;
+  padding: 1em;
+  width: 400px;
+}
+
+.form_title{
+  text-align:center;
+  color:white;
+}
+
+/*make space between each user_input*/
+.user_input {
+  margin-top: 1em;
+}
+
+/* make the label show in a single line and properly align all the labels */
+.input_label {
+  color:white;
+  display: inline-block;
+  text-align: left;
+  width:40%;
+}
+
+/*set all text fields have the same font settings and size*/
+input,
+textarea,
+select{
+	padding: 0.5em;
+	background-color: #ecf0f1;
+	font: inherit;
+	float: right;
+	width: 50%;
+}
+
+.user_input::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* highlight active input */
+input:focus, textarea:focus, select:focus{
+  background-color: #9fadc4;
+  border-radius: 5px;
+}
+
+.submit_btn {
+   background-color: white;
+   width: 100%;
+   padding: 1em 0;
+   color: black;
+   font-weight: bold;
+}
+
+/*hide the legend for accessibility*/
+.form_legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

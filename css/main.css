@@ -316,15 +316,15 @@ a {
 }
 
 .grid_item{
+  min-width:320px;
   width:400px;
-  margin:10px auto;
-  position: relative;
+  margin:40px auto;
+  z-index: -2;
 }
 
 .content_title{
-  position: relative;
-  top:-10px;
-  left: 10px;
+  color:#f4c542;
+  border-top:1px solid red;
 }
 
 /*when user hover on accordian title and accordianPlus*/
@@ -532,9 +532,16 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
     flex-flow: row wrap;
   }
 
+  .grid_container .grid_item{
+      width:75%;
+      font-size:22px;
+      transition: all 1000ms;
+  }
+
   .column{
     width:40%;
   }
+
 
 }
 
@@ -583,6 +590,22 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
     z-index: 1;
     top: 60px;
     box-shadow: 5px 10px #484f5b;
+  }
+
+  .grid_container{
+    flex-flow:row wrap;
+  }
+
+  .grid_container+.grid_item{
+      width:50%;
+  }
+
+  .gird_container:nth-child(2){
+    width:50%;
+  }
+
+  .grid_container:last-child{
+    width:80%;
   }
 
   /*4 columns in footer*/
