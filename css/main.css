@@ -435,7 +435,7 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
 }
 
 .footer a{
-  display: block;
+  display: inline-block;
   font-weight: bold;
 }
 
@@ -549,40 +549,49 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   .nav_container{
     max-width: 1000px;
   }
+
   /*hide the mobile menu bar in desktop version*/
   .nav_bar {
     display: none;
   }
+
   .primary_menu {
     width: 100%;
     padding: 5px 20px 0 20px;
   }
+
   /*change the flex direction*/
   .navigation_list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   /*make the dropdown icon closer to menu*/
   .navigation_dropicon::before, .navigation_dropicon::after {
     left: -40px;
     top: 2px;
   }
+
   /*clear the menu padding*/
   .navigation_list a {
     padding: 0 25px 0 25px;
   }
+
   /*hover on primary_menu to see drop down menu*/
   .navigation_list>li:hover .level_two_menu {
     display: block;
   }
+
   .navigation_list>li:hover {
     border-bottom: 2px solid yellow;
   }
+
   /*clear the level two menu padding*/
   .level_two_menu>li {
     padding: 0;
   }
+
   .level_two_menu {
     position: absolute;
     border: 1px solid black;
