@@ -5,7 +5,13 @@
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+  overflow-x:hidden;
+}
+
 body {
+  height:100%;
   background-color: #fff;
   color: #222;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -20,8 +26,7 @@ a {
 }
 
 .header_info {
-  background-color: #6d6c69;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .page_heading {
@@ -30,26 +35,16 @@ a {
   padding: 10px;
 }
 
-/*set the style for image container*/
-
-.image_container {
-  width: 85%;
-  margin: 25px auto;
-  position: relative;
+/*set the style for image*/
+.image_container{
+  height: auto;
+  max-height:400px;
+  overflow: hidden;
 }
 
 .header_img {
-  width: 90%;
+  width: 100%;
   opacity: 0.6;
-}
-
-.image_fit {
-  object-fit: contain;
-  height: auto;
-  position: relative;
-  left: 5%;
-  top: 0;
-  /* right: 0; */
 }
 
 .logo_name {
@@ -88,6 +83,7 @@ a {
   left:0;
   right:0;
   z-index: 1;
+  height:55px;
   background-color: white;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 }
@@ -224,6 +220,7 @@ a {
 /*set padding for level two menu*/
 
 .level_two_menu>li {
+  background-color:white;
   padding-left: 24px;
 }
 
@@ -372,7 +369,7 @@ reference: https://codepen.io/Lueh/pen/Ogbejq*/
   position:absolute;
   width:16px;
   top: 20px;
-  right: 15px;
+  right: 5%;
 }
 
 /*draw accordian icon*/

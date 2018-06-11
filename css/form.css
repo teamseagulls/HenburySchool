@@ -9,7 +9,7 @@ fieldset{
   border-radius: 1em;
   background-color: #1f4684;
   padding: 1em;
-  width: 400px;
+  width: 320px;
 }
 
 .form_title{
@@ -54,9 +54,11 @@ input:focus, textarea:focus, select:focus{
 }
 
 .submit_btn {
+   display:block;
    background-color: white;
-   width: 100%;
+   width: 60%;
    padding: 1em 0;
+   margin:0 auto;
    color: black;
    font-weight: bold;
 }

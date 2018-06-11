@@ -10,6 +10,7 @@
   text-align: center;
   font-size: 24px;
   padding:10px;
+  color:#f4c542;
 }
 
 .section_content{
@@ -21,9 +22,10 @@
 .card{
   width:300px;
   background-color:#dee3ea;
-  margin:10px auto;
+  margin:30px auto;
   position:relative;
   padding-bottom: 10px;
+  transition:1s;
 }
 
 .card_image{
@@ -68,5 +70,9 @@
     font-size:22px;
     line-height: 35px;
     transition: all 1s;
+  }
+
+  .card:hover{
+    transform:scale(1.1);
   }
 }

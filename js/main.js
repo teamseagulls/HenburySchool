@@ -84,6 +84,13 @@ window.onload = function(){
     }
   },false);
 
+  var card=document.querySelectorAll('.card');
+  for(var i=0,length=card.length;i<length;i++){
+    card[i].addEventListener("click",function(){
+      this.style="transform:scale(1.1)";
+    },false);
+  }
+
 
   showBurgermenu();
   showSubmenu();
