@@ -91,6 +91,13 @@ window.onload = function(){
     },false);
   }
 
+  var pagefronts=document.querySelectorAll('.page_front');
+  for(var i=0,length=pagefronts.length;i<length;i++){
+    pagefronts[i].addEventListener("click",function(){
+      this.classList.toggle('active');
+      this.nextElementSibling.classList.toggle('isactive');
+    })
+  }
 
   showBurgermenu();
   showSubmenu();
